@@ -1,0 +1,44 @@
+
+#cs >> Danh sách hàm ===============================================================================================
+
+T?t c? hàm du?c g?i trong file này n?m trong file Function.au3
+
+#ce << Danh sách hàm ===============================================================================================
+
+
+;~ Cài d?t l?i AutoIT
+Opt("GUICloseOnESC",0)
+Opt("SendCapslockMode",0)
+
+#include-once
+#include "GlobalVariable.au3"	;~ T?t c? bi?n chuong trình
+#include "HotKeySet.au3"		;~ Các phím nóng
+
+
+
+;~ Thu vi?n m?c d?nh s?n có trong AutoIT
+#include <IE.au3>			;NoShow
+#include <Array.au3>		;NoShow
+#Include <GuiComboBox.au3>	;NoShow
+
+;~ Thu vi?n khác t?i t? Internet
+#include "UDF\NomadMemory.au3"
+
+;~ Thu vi?n t? vi?t
+#include "Functions.au3"
+#include "SaiTest.au3"
+
+FAutoStart()
+While 1
+	;DShowTest()
+	Sleep(250)
+	
+	If $Testing Then
+		FShowReview()
+		If $IsPointer Then
+			FShowPointer()
+		Else
+			FShowAddressList()
+		EndIf
+	EndIf
+WEnd

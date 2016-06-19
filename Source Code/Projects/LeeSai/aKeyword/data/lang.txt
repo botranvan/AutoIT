@@ -1,0 +1,2 @@
+﻿IWebsite=https://google.com
+IKeyword=".php?id="

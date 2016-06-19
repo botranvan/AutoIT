@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<object type="TAForm" name="MainGUI">
+	<properties>
+		<property name="Left" vt="Int16">400</property>
+		<property name="Top" vt="Int16">274</property>
+		<property name="Width" vt="Int16">240</property>
+		<property name="Height" vt="Int16">177</property>
+		<property name="Caption" vt="String">SaiGUI</property>
+		<property name="Color" vt="Ident">clBtnFace</property>
+		<property name="Font.Charset" vt="Ident">DEFAULT_CHARSET</property>
+		<property name="Font.Color" vt="Ident">clWindowText</property>
+		<property name="Font.Height" vt="Int8">-11</property>
+		<property name="Font.Name" vt="String">MS Sans Serif</property>
+		<property name="Font.Style" vt="Set"/>
+		<property name="OldCreateOrder" vt="False">False</property>
+		<property name="OnClose" vt="String">MainGUIClose</property>
+		<property name="Style" vt="Int32">-1798701056</property>
+		<property name="ExStyle" vt="Int16">392</property>
+		<property name="Version" vt="String">1.04</property>
+		<property name="FormOptOnEvent" vt="True">True</property>
+		<property name="FormOptIndentCount" vt="Int8">0</property>
+		<property name="PixelsPerInch" vt="Int8">96</property>
+		<property name="TextHeight" vt="Int8">13</property>
+	</properties>
+	<components>
+		<object type="TAButton" name="BHidden">
+			<properties>
+				<property name="Left" vt="Int16">196</property>
+				<property name="Top" vt="Int8">112</property>
+				<property name="Width" vt="Int8">27</property>
+				<property name="Height" vt="Int8">25</property>
+				<property name="Hint" vt="String">Minimize Tool</property>
+				<property name="Caption" vt="String">/\</property>
+				<property name="TabOrder" vt="Int8">0</property>
+				<property name="OnClick" vt="String">BHiddenClick</property>
+				<property name="Color" vt="Ident">clBtnFace</property>
+				<property name="CtrlStyle" vt="Int32">1342259200</property>
+				<property name="CtrlExStyle" vt="Int8">0</property>
+				<property name="Resizing" vt="Set">DockWidth, DockHeight</property>
+			</properties>
+			<components/>
+		</object>
+		<object type="TALabel" name="LNotice">
+			<properties>
+				<property name="Left" vt="Int8">10</property>
+				<property name="Top" vt="Int8">120</property>
+				<property name="Width" vt="Int8">44</property>
+				<property name="Height" vt="Int8">17</property>
+				<property name="Caption" vt="String">Notice...</property>
+				<property name="Font.Charset" vt="Ident">DEFAULT_CHARSET</property>
+				<property name="Font.Color" vt="Ident">clWindowText</property>
+				<property name="Font.Height" vt="Int8">-11</property>
+				<property name="Font.Name" vt="String">MS Sans Serif</property>
+				<property name="Font.Style" vt="Set"/>
+				<property name="ParentFont" vt="False">False</property>
+				<property name="TabOrder" vt="Int8">1</property>
+				<property name="HaveVariable" vt="False">False</property>
+				<property name="CtrlStyle" vt="Int32">1342177548</property>
+				<property name="CtrlExStyle" vt="Int8">0</property>
+				<property name="Resizing" vt="Set"/>
+			</properties>
+			<components/>
+		</object>
+		<object type="TAButton" name="BHomePage">
+			<properties>
+				<property name="Left" vt="Int16">165</property>
+				<property name="Top" vt="Int8">112</property>
+				<property name="Width" vt="Int8">27</property>
+				<property name="Height" vt="Int8">25</property>
+				<property name="Caption" vt="String">?</property>
+				<property name="TabOrder" vt="Int8">2</property>
+				<property name="OnClick" vt="String">BHomePageClick</property>
+				<property name="Color" vt="Ident">clBtnFace</property>
+				<property name="CtrlStyle" vt="Int32">1342259200</property>
+				<property name="CtrlExStyle" vt="Int8">0</property>
+				<property name="Resizing" vt="Set">DockWidth, DockHeight</property>
+			</properties>
+			<components/>
+		</object>
+		<object type="TALabel" name="LFishingHole">
+			<properties>
+				<property name="Left" vt="Int16">160</property>
+				<property name="Top" vt="Int8">8</property>
+				<property name="Width" vt="Int8">63</property>
+				<property name="Height" vt="Int8">19</property>
+				<property name="Cursor" vt="Ident">crHandPoint</property>
+				<property name="Hint" vt="String">Click here</property>
+				<property name="Caption" vt="String">9999:9999</property>
+				<property name="Font.Charset" vt="Ident">ANSI_CHARSET</property>
+				<property name="Font.Color" vt="Ident">clBlue</property>
+				<property name="Font.Height" vt="Int8">-12</property>
+				<property name="Font.Name" vt="String">Arial</property>
+				<property name="Font.Style" vt="Set">fsBold</property>
+				<property name="ParentFont" vt="False">False</property>
+				<property name="TabOrder" vt="Int8">3</property>
+				<property name="OnClick" vt="String">LFishingHoleClick</property>
+				<property name="HaveVariable" vt="False">False</property>
+				<property name="CtrlStyle" vt="Int32">1342177537</property>
+				<property name="CtrlExStyle" vt="Int8">0</property>
+				<property name="Resizing" vt="Set"/>
+			</properties>
+			<components/>
+		</object>
+		<object type="TALabel" name="LHookButton">
+			<properties>
+				<property name="Left" vt="Int8">8</property>
+				<property name="Top" vt="Int8">37</property>
+				<property name="Width" vt="Int16">147</property>
+				<property name="Height" vt="Int8">17</property>
+				<property name="Caption" vt="String">Toa do cua nut hinh moc cau:</property>
+				<property name="TabOrder" vt="Int8">4</property>
+				<property name="HaveVariable" vt="False">False</property>
+				<property name="CtrlStyle" vt="Int32">1342177536</property>
+				<property name="CtrlExStyle" vt="Int8">0</property>
+				<property name="Resizing" vt="Set"/>
+			</properties>
+			<components/>
+		</object>
+		<object type="TALabel" name="LHook">
+			<properties>
+				<property name="Left" vt="Int16">160</property>
+				<property name="Top" vt="Int8">37</property>
+				<property name="Width" vt="Int8">63</property>
+				<property name="Height" vt="Int8">19</property>
+				<property name="Cursor" vt="Ident">crHandPoint</property>
+				<property name="Hint" vt="String">Click here</property>
+				<property name="Caption" vt="String">9999:9999</property>
+				<property name="Font.Charset" vt="Ident">ANSI_CHARSET</property>
+				<property name="Font.Color" vt="Ident">clBlue</property>
+				<property name="Font.Height" vt="Int8">-12</property>
+				<property name="Font.Name" vt="String">Arial</property>
+				<property name="Font.Style" vt="Set">fsBold</property>
+				<property name="ParentFont" vt="False">False</property>
+				<property name="TabOrder" vt="Int8">5</property>
+				<property name="OnClick" vt="String">LHookClick</property>
+				<property name="HaveVariable" vt="False">False</property>
+				<property name="CtrlStyle" vt="Int32">1342177537</property>
+				<property name="CtrlExStyle" vt="Int8">0</property>
+				<property name="Resizing" vt="Set"/>
+			</properties>
+			<components/>
+		</object>
+		<object type="TAButton" name="BStart">
+			<properties>
+				<property name="Left" vt="Int16">144</property>
+				<property name="Top" vt="Int8">64</property>
+				<property name="Width" vt="Int8">75</property>
+				<property name="Height" vt="Int8">33</property>
+				<property name="Caption" vt="String">Bat Dau</property>
+				<property name="TabOrder" vt="Int8">6</property>
+				<property name="OnClick" vt="String">BStartClick</property>
+				<property name="Color" vt="Ident">clBtnFace</property>
+				<property name="CtrlStyle" vt="Int32">1342390272</property>
+				<property name="CtrlExStyle" vt="Int8">0</property>
+				<property name="Resizing" vt="Set">DockWidth, DockHeight</property>
+			</properties>
+			<components/>
+		</object>
+		<object type="TALabel" name="LIsFishing">
+			<properties>
+				<property name="Left" vt="Int8">40</property>
+				<property name="Top" vt="Int8">64</property>
+				<property name="Width" vt="Int8">68</property>
+				<property name="Height" vt="Int8">17</property>
+				<property name="Caption" vt="String">Dang Cau Ca</property>
+				<property name="TabOrder" vt="Int8">7</property>
+				<property name="HaveVariable" vt="False">False</property>
+				<property name="CtrlStyle" vt="Int32">1342177537</property>
+				<property name="CtrlExStyle" vt="Int8">0</property>
+				<property name="Resizing" vt="Set"/>
+			</properties>
+			<components/>
+		</object>
+		<object type="TALabel" name="LIsCaught">
+			<properties>
+				<property name="Left" vt="Int8">33</property>
+				<property name="Top" vt="Int8">88</property>
+				<property name="Width" vt="Int8">86</property>
+				<property name="Height" vt="Int8">17</property>
+				<property name="Caption" vt="String">Ca chua can cau</property>
+				<property name="TabOrder" vt="Int8">8</property>
+				<property name="HaveVariable" vt="False">False</property>
+				<property name="CtrlStyle" vt="Int32">1342177537</property>
+				<property name="CtrlExStyle" vt="Int8">0</property>
+				<property name="Resizing" vt="Set"/>
+			</properties>
+			<components/>
+		</object>
+		<object type="TALabel" name="LFishingButton">
+			<properties>
+				<property name="Left" vt="Int8">8</property>
+				<property name="Top" vt="Int8">8</property>
+				<property name="Width" vt="Int16">144</property>
+				<property name="Height" vt="Int8">17</property>
+				<property name="Caption" vt="String">Toa do cua nut [Fishing Hole]</property>
+				<property name="TabOrder" vt="Int8">9</property>
+				<property name="HaveVariable" vt="False">False</property>
+				<property name="CtrlStyle" vt="Int32">1342177536</property>
+				<property name="CtrlExStyle" vt="Int8">0</property>
+				<property name="Resizing" vt="Set"/>
+			</properties>
+			<components/>
+		</object>
+	</components>
+</object>

@@ -1,0 +1,44 @@
+
+1. we need to make korean name.   rendom to make first name and last name   as you made txt file it's ok.
+=> Push fist name and last name in: firstname.txt and lastname.txt
+=> They will be random combined
+
+2. should be over 20 age.
+=> 21 to 41
+
+3. male, female rendom.
+=> done
+
+4. all is the not same e-mail account.
+  ex) we'll make e-mail account put in the txt file and just copy and paste web site.
+     as like naver click style.
+=> Email will be randome like this: Firstname_Lastname_RandomMailName@hotmail.com
+=> RandomMailName will be load from: mail.txt
+
+
+5. all is the not same 
+=> Random pass with 9 character
+
+6. we don't need telephone number.
+=> Phone will be emty
+
+7. second e-mail also we'll make and put in the txt file and just copy and paste web site.
+=> Second mail will be random in: altermail.txt
+=> Just push 1 email if you dont want it random
+
+8. we need question and answer.
+   question is first one choice
+   answer is all the same " alsk4040 "
+=> Done with answer like this: "alsk4040" (no white space)
+
+
+9. country is south of korea.
+=> Done with code: KR
+
+
+when these accounts created we have to know that account imformation and we have to fix on excel-file.
+why we have to do this coz we make a melon account base on hotmail-account informatoin and then melon company send to hotmail-account
+conform about permit melon account. so hotmail-account information is very important.
+
+ex) first name- last name- E_mail account- password
+

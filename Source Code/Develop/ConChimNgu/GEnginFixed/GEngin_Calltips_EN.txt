@@ -1,0 +1,126 @@
+# === GEng_Animation_calltips.txt ===
+_GEng_Anim_Create (  ) Create an Animation Object (required: #include <GEngin.au3>)
+_GEng_Anim_FrameCount ( ByRef hAnim ) Get the number of frames in an Animation Object (required: #include <GEngin.au3>)
+_GEng_Anim_FrameAdd ( ByRef hAnim , ByRef hImage , iFramDuration [, x [, y [, w [, h]]]] ) Add a frame to an Animation Object (required: #include <GEngin.au3>)
+_GEng_Anim_FrameMod ( ByRef hAnim , iFrameNumber , ByRef hImage [, iFramDuration [, x [, y [, w [, h]]]]] ) Modify an Animation Object's frame (required: #include <GEngin.au3>)
+
+# === GEng_Draw_calltips.txt ===
+_GEng_ScrFlush ( [ iBkColor ] ) Flush the screen with a bakcground color (required: #include <GEngin.au3>)
+_GEng_ScrUpdate (  ) Validate all the drawings (Sprites, Text) and update the screen (required: #include <GEngin.au3>)
+_GEng_FPS_Get ( [ iDelay ] ) Returns the FPS (required: #include <GEngin.au3>)
+
+# === GEng_Geometry_calltips.txt ===
+_GEng_Sprite_PointGet ( ByRef hSprite , iImgX , iImgY , ByRef x , ByRef y ) Returns the word's relatvie position of a sprite's relative point (required: #include <GEngin.au3>)
+_GEng_PointToPoint_Dist ( x0 , y0 , x , y ) Returns the distance between 2 points (required: #include <GEngin.au3>)
+_GEng_PointToPoint_Angle ( x0 , y0 , x , y ) Returns the angle between 2 points (required: #include <GEngin.au3>)
+_GEng_PointToPoint_Vector ( x0 , y0 , x , y [, iGrandeur] ) Returns a vector oriented from the first point to the second (required: #include <GEngin.au3>)
+_GEng_SpriteToPoint_Dist ( ByRef hSprite , x , y ) Returns the distance between a Sprite Object and a point (required: #include <GEngin.au3>)
+_GEng_SpriteToPoint_Angle ( ByRef hSprite , x , y ) Returns the angle between a Sprite Object and a point (required: #include <GEngin.au3>)
+_GEng_SpriteToPoint_AngleDiff ( ByRef hSprite , x , y ) Returns the angle between a Sprite Object and a point, relativelly to the (required: #include <GEngin.au3>)
+_GEng_SpriteToPoint_Vector ( ByRef hSprite , x , y [, iGrandeur] ) Returns a vector oriented from a Sprite Object to a point (required: #include <GEngin.au3>)
+_GEng_SpriteToSprite_Dist ( ByRef hSprite , ByRef hSprite2 ) Returns the distance between 2 Sprite Objects (required: #include <GEngin.au3>)
+_GEng_SpriteToSprite_Angle ( ByRef hSprite , ByRef hSprite2 ) Returns the angle from the first Sprite Object to the second (required: #include <GEngin.au3>)
+_GEng_SpriteToSprite_AngleDiff ( ByRef hSprite , ByRef hSprite2 ) Returns the angle between a Sprite Object and another, relativelly to the (required: #include <GEngin.au3>)
+_GEng_SpriteToSprite_Vector ( ByRef hSprite , ByRef hSprite2 [, iGrandeur] ) Returns a vector oriented from a Sprite Object to another (required: #include <GEngin.au3>)
+_GEng_AngleToVector ( iAngle [, iGrandeur] ) Returns a vector from an Angle and a Lenght (required: #include <GEngin.au3>)
+_GEng_VectorToAngle ( difX , difY ) Returns an Angle from a Vector (required: #include <GEngin.au3>)
+
+# === GEng_Image_calltips.txt ===
+_GEng_ImageLoad ( sPath [, imgW [, imgH [, x [, y [, w [, h]]]]]] ) Creates an image object from a file, or a rectangular part of a file (required: #include <GEngin.au3>)
+_GEng_ImageLoadStream ( pic [, imgW [, imgH [, x [, y [, w [, h]]]]]] ) Creates an image object from a string representing binary image file data (required: #include <GEngin.au3>)
+
+# === GEng_Sound_calltips.txt ===
+_GEng_Sound_Init ( [ iSampleRate [, iStereo]] ) Initialize the sound system (required: #include <GEngin.au3>)
+_GEng_Sound_Shutdown (  ) Shutdown sound system and free ressources (required: #include <GEngin.au3>)
+_GEng_Sound_GlobalVolume ( [ iVolume ] ) Set or Get the global application sound volum (required: #include <GEngin.au3>)
+_GEng_Sound_Load ( sPath [, iLoop] ) Loads a sound into a Sound Object (required: #include <GEngin.au3>)
+_GEng_Sound_Play ( hSound [, iRestart] ) Play a Sound Object (required: #include <GEngin.au3>)
+_GEng_Sound_AttribSet ( hSound [, iVolume [, iPan [, iPitch]]] ) Adjust the attributes of a Sound Object (required: #include <GEngin.au3>)
+_GEng_Sound_AttribGet ( hSound , ByRef iVolume , ByRef iPan , ByRef iPitch , ByRef iDefaultSampleRate ) Get the attributes of a Sound Object (required: #include <GEngin.au3>)
+_GEng_Sound_SetLoop ( ByRef hSound , iLoop ) Specify if a sound object should be played in loop (required: #include <GEngin.au3>)
+_GEng_Sound_IsPlaying ( ByRef hSound ) Get the status of a Sound Object (required: #include <GEngin.au3>)
+_GEng_Sound_Pause ( ByRef hSound ) Pause a Sound Object (required: #include <GEngin.au3>)
+_GEng_Sound_Stop ( ByRef hSound ) Stop a Sound Object (required: #include <GEngin.au3>)
+_GEng_Sound_Free ( ByRef hSound ) Delete and free the ressources used by a Sound Object (required: #include <GEngin.au3>)
+
+# === GEng_Sprite_Animation_calltips.txt ===
+_GEng_Sprite_AnimRewind ( ByRef hSprite [, iFrame] ) Reset the animation parameters of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_Animate ( ByRef hSprite , ByRef hAnim [, iStopFrame] ) Animate a Sprite Object with a given Animation Object (required: #include <GEngin.au3>)
+_GEng_Sprite_AnimDelayMultiplierGet ( ByRef hSprite ) Get the value of the Frame delay multiplier of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_AnimDelayMultiplierSet ( ByRef hSprite , iVal ) Set the value of the Frame delay multiplier of a Sprite Object (required: #include <GEngin.au3>)
+
+# === GEng_Sprite_Append_calltips.txt ===
+_GEng_Sprite_ExtInfoAdd ( ByRef hSprite , vInfo ) Append some value to a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_ExtInfoSet ( ByRef hSprite , iIndex , vInfo ) Modifie an appended value. (required: #include <GEngin.au3>)
+_GEng_Sprite_ExtInfoGet ( ByRef hSprite , iIndex ) Read an appended value (required: #include <GEngin.au3>)
+
+# === GEng_Sprite_calltips.txt ===
+_GEng_Sprite_Create ( [ hImage ] ) Creates a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_ImageSet ( ByRef hSprite , ByRef hImage [, x [, y [, w [, h]]]] ) Assigne an image object, or a part of it to a sprite (required: #include <GEngin.au3>)
+_GEng_Sprite_ImageSetRect ( ByRef hSprite , x , y , w , h [, InitSize] ) Specifiy the part (rectangle) of the Image Object actually assigned to the Sprite that will be drawn (required: #include <GEngin.au3>)
+_GEng_Sprite_Draw ( ByRef hSprite [, iCalculateMovements] ) Draws a sprite at it's current position and angle (required: #include <GEngin.au3>)
+_GEng_Sprite_Delete ( ByRef hSprite ) Delete a Sprite Object (required: #include <GEngin.au3>)
+
+# === GEng_Sprite_Collision_calltips.txt ===
+_GEng_Sprite_CollisionSet ( ByRef hSprite , iType [, x [, y [, w [, h]]]] ) Define the collision shape of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_Collision ( ByRef hSprite1 , ByRef hSprite2 [, iScrBorderPosition [, iDynamique [, iPrecision]]] ) Test if 2 sprites collides (required: #include <GEngin.au3>)
+_GEng_Sprite_CollisionScrBorders ( ByRef hSprite [, iDynamique] ) Test collision between a Sprite Object and all screen borders. (required: #include <GEngin.au3>)
+
+# === GEng_Sprite_Dynamics_calltips.txt ===
+_GEng_Sprite_Move ( ByRef hSprite ) Calcule et met à jout position et angle d'un sprite selon ses paramètres dynamiques (required: #include <GEngin.au3>)
+
+# === GEng_Sprite_Get_calltips.txt ===
+_GEng_Sprite_MassGet ( ByRef hSprite ) Get a sprite's mass (required: #include <GEngin.au3>)
+_GEng_Sprite_PosGet ( ByRef hSprite , ByRef x , ByRef y ) Get the position of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_SizeGet ( ByRef hSprite , ByRef x , ByRef y ) Get the size of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_OriginGet ( ByRef hSprite , ByRef x , ByRef y ) Get the origin point of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_SpeedGet ( ByRef hSprite , ByRef x , ByRef y ) Get the speed of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_MaxSpeedGet ( ByRef hSprite ) Get the maximum speed of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_AccelGet ( ByRef hSprite , ByRef x , ByRef y ) Get the acceleration of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_InnertieGet ( ByRef hSprite ) Get the innertia of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_AngleGet ( ByRef hSprite [, iType] ) Get the angle of a Sprite Object (degrees Or radians) (required: #include <GEngin.au3>)
+_GEng_Sprite_AngleOriginGet ( ByRef hSprite [, iType] ) Get then angular origin of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_AngleSpeedGet ( ByRef hSprite ) Get the rotation speed of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_AngleMaxSpeedGet ( ByRef hSprite ) Get the maximum rotation speed of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_AngleAccelGet ( ByRef hSprite ) Get the rotation acceleration of a Sprite Object (required: #include <GEngin.au3>)
+
+# === GEng_Sprite_Set_calltips.txt ===
+_GEng_Sprite_MasseSet ( ByRef hSprite , iMasse ) Set Sprite mass (for collision calculation) (required: #include <GEngin.au3>)
+_GEng_Sprite_PosSet ( ByRef hSprite [, x [, y]] ) Set the position of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_SizeSet ( ByRef hSprite [, w [, h]] ) Set the size of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_OriginSet ( ByRef hSprite [, x [, y]] ) Set the origin point of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_OriginSetEx ( ByRef hSprite , eOrigin ) Set the origin point of a Sprite Object, to some specifique presets (most commons) (required: #include <GEngin.au3>)
+_GEng_Sprite_AngleOriginSet ( ByRef hSprite , iAngle ) Specify the angular origin of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_SpeedSet ( ByRef hSprite [, x [, y [, max]]] ) Set the speed, and the max speed of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_SpeedAdd ( ByRef hSprite [, x [, y]] ) Add values to the actual speed of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_AccelSet ( ByRef hSprite [, x [, y]] ) Set the acceleration of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_AccelAdd ( ByRef hSprite [, x [, y]] ) Add values to the actual acceleration of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_InnertieSet ( ByRef hSprite , value ) Set the innertia of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_AngleSet ( ByRef hSprite , iAngle ) Set the angle of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_AngleAdd ( ByRef hSprite [, iAngle] ) Add a value to the actual angle of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_AngleSpeedSet ( ByRef hSprite [, iAngle [, iMax]] ) Set the rotation (angular) speed, and the max rotation speed (required: #include <GEngin.au3>)
+_GEng_Sprite_AngleSpeedAdd ( ByRef hSprite [, iAngle] ) Add a value to the actual rotation speed of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_AngleAccelSet ( ByRef hSprite [, iAngle] ) Set the rotation (angular) acceleration of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_AngleAccelAdd ( ByRef hSprite [, iAngle] ) Add a value to the actual angular acceleration of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_sprite_AngleInnertieSet ( ByRef hSprite [, iAngle] ) Set the angular innertia of a Sprite Object (required: #include <GEngin.au3>)
+_GEng_Sprite_ColorMatrixTranslate ( ByRef hSprite [, fRed [, fGreen [, fBlue [, fAlpha]]]] ) Change the color components of a Sprite Object (required: #include <GEngin.au3>)
+
+# === GEng_System_calltips.txt ===
+_GEng_Start ( sTitle , iW , iH [, iX [, iY [, iStyle [, iExtStyle]]]] ) Starts G-Engin, and creates a display window. (required: #include <GEngin.au3>)
+_GEng_Shutdown (  ) Stops G-Engin, deletes the display window, and free all the ressources. (required: #include <GEngin.au3>)
+_GEng_SetDebug ( [ mode ] ) Change debug mode, or get it's current status (required: #include <GEngin.au3>)
+
+# === GEng_Text_calltips.txt ===
+_GEng_Font_Create ( [ sFontName [, iFontSize [, iFontStyle [, iFormat [, iAlign]]]]] ) Creates a Font Object to be used by Text Object (required: #include <GEngin.au3>)
+_GEng_Font_Delete ( ByRef hFont ) Deletes a Font Object (required: #include <GEngin.au3>)
+_GEng_Text_Create ( ByRef hFont [, sText [, iColor [, iPosX [, iPosY [, iWidth [, iHeight]]]]]] ) Creates a Text Object. (required: #include <GEngin.au3>)
+_GEng_Text_Delete ( ByRef hTxtRect ) Delete a Text Object (required: #include <GEngin.au3>)
+_GEng_Text_FontSet ( ByRef hTxtRect [, hFont] ) Modify the Font Object of a Text Object (required: #include <GEngin.au3>)
+_GEng_Text_StringSet ( ByRef hTxtRect [, sText] ) Modify the text string of a Text Object (required: #include <GEngin.au3>)
+_GEng_Text_StringGet ( ByRef hTxtRect ) Returns the actual text string of a Text Object (required: #include <GEngin.au3>)
+_GEng_Text_PosSet ( ByRef hTxtRect [, iPosX [, iPosY [, iWidth [, iHeight]]]] ) Changes the position and the dimensions of the rectangle containing the text of a Text Object (required: #include <GEngin.au3>)
+_GEng_Text_PosGet ( ByRef hTxtRect , ByRef iPosX , ByRef iPosY , ByRef iWidth , ByRef iHeight ) Get the position and dimensions of a Text Object (required: #include <GEngin.au3>)
+_GEng_Text_SizeMeasure ( ByRef hFont , sText , ByRef w , ByRef h ) Returns the dimension needed to display $sText with $hFont (required: #include <GEngin.au3>)
+_GEng_Text_ColorSet ( ByRef hTxtRect , iColor ) Change the color of a Text Object (required: #include <GEngin.au3>)
+_GEng_Text_Draw ( ByRef hTxtRect ) Draw a Text Object (required: #include <GEngin.au3>)
+

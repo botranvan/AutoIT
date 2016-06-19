@@ -1,0 +1,2 @@
+﻿CHStep6Freeze=4
+CHStep8Freeze=4

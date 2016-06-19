@@ -1,0 +1,25 @@
+#include-once
+
+#include "CBUseBuff.au3"
+
+#include "CBSKill1.au3"
+#include "CBSKill2.au3"
+#include "CBSKill3.au3"
+#include "CBSKill4.au3"
+#include "CBSKill5.au3"
+#include "CBSKill6.au3"
+#include "CBSKill7.au3"
+#include "CBSKill8.au3"
+#include "CBSKill9.au3"
+#include "CBSKill10.au3"
+
+#include "CBSKill101.au3"
+#include "CBSKill102.au3"
+#include "CBSKill103.au3"
+#include "CBSKill104.au3"
+#include "CBSKill105.au3"
+#include "CBSKill106.au3"
+#include "CBSKill107.au3"
+#include "CBSKill108.au3"
+#include "CBSKill109.au3"
+#include "CBSKill110.au3"

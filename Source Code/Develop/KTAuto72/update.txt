@@ -1,0 +1,90 @@
+﻿== Hướng Dẫn Sử Dụng ===================================================
+Kéo skill Cưỡi Thú vào ô F5
+Kích hoạt 1 hoặc 2 quest cần thực hiện
+
+== Cập nhật v1.17 ===================================================
+Tự lên ngựa khi bắt đầu các quest
+Tự chạy từ Atlantis đến chỗ Đề Lạc
+Tool sẽ tự thu gọn danh sách bên phải MiniMap khi bắt đầu quest
+Đếm thời gian chạy từ Đề Lạc đến Amalthea
+Thay đổi phương thức tính thời gian kill mob
+Khởi động lại chu trình khi tắt mở Các Quest
+
+== Cập nhật v1.16 ===================================================
+Tự tắt nhiệm vụ cấp 30 khi lấy được 3 Cường Hóa Thú Cưỡi
+Reset lại step của nhiệm vụ cấp 30 mà không cần tắt Tool
+Sửa lại cơ chế click của nhiệm vụ cấp 30
+Tự làm nhiệm vụ cấp 35 lấy 2 Trùng Sinh Kết Tinh
+Tự tắt nhiệm vụ cấp 35 khi lấy được 2 Trùng Sinh Kết Tinh
+Gamer phải tự thu gọn danh sách bên phải MiniMap khi bắt đầu quest
+
+== Cập nhật v1.15 ===================================================
+Tự làm nhiệm vụ Chỉ Dẫn Của Thần cấp 30 lấy 3 Cường Hóa Thú Cưỡi
+
+== Cập nhật v1.14 ===================================================
+** Kể từ bản này Auto ngưng Phát Triển
+** Cám ơn AE Gamer đã tin dùng Tool này (^ ^ )
+
+Fix lỗi mất Giao Diện khi khởi động Tool trước Game và khi chưa Log vào Char
+Thay đổi hệ thống Tray System
+
+== Cập nhật v1.13 ===================================================
+Tự động kích hoạt lại Auto trong Game khi nó được bật/tắt lúc đang Train bằng Tool
+
+== Cập nhật v1.12 ===================================================
+Chỉ kiểm trả cập nhật khi chưa chạy Tool
+Thêm nút nạp lại nhân vật, để có thể mở Tool bất kỳ lúc nào
+Kết hợp với Auto trong Game để Lươm đồ, sử dụng Item,...
+
+== Cập nhật v1.11 ===================================================
+Khôi phục lại chức năng chống KS
+Hiển thị HP của quái theo phần trăm %
+(Không có mã nguồn)
+
+== Cập nhật v1.10 ===================================================
+Đổi lại địa chỉ ô nhớ Char HP Current cho đúng
+(Không có mã nguồn)
+
+== Cập nhật v1.09 ===================================================
+Cập nhật để tương tích với sự nâng cấp của Kiếm Tiên
+Không còn hiển thị HP của quái
+Mất chức năng chống KS quái
+
+== Cập nhật v1.08 ===================================================
+Thêm 3 skill Buff theo thời gian đợi, độc lập với các Skill Đánh
+Thêm phím tắt đóng mở 3 skill Buff: Alt + Y
+Thêm 3 giây Delay cho các skill tự bơm để giảm CPU cho Auto
+Thêm điều kiện sử dụng Skill XP: phải target quái
+Đổi phương thức Delay của Skill Đánh để giảm CPU
+Đổi phương thức tung skill: vẫn bấm khi quá thời gian đợi
+Đổi cách nhập thời gian đợi: từ mili giây chuyển thành giây
+Đổi cách nhập thời gian đợi: khi Cancel giữ nguyên Delay Time
+Đổi thông báo cập nhật: hiển thị tên phiên bản mới nhất của Auto
+Đổi phím tắt thu gọn Auto: thêm Control vào tổ hợp phím
+Bỏ phím tắt: Esc - Xóa thông báo
+Lưu tùy chọn khi thu gọn Auto
+
+== Cập nhật v1.07 ===================================================
+Tăng tốc chọn quái khác khi quái hiện tại đã bị người khác đánh
+Thêm phím tắt cho chức năng thu gọn Auto
+Tách chức năng heal HP và MP của Pet ra riêng
+Thêm thời gian đợi giữa các skill tấng công (Delay time)
+Thêm chú thích ở chỗ Mod HP và Delay Skill Time, đưa chuột vào đợi 1 tý sẽ thấy.
+
+== Cập nhật v1.06 ===================================================
+Lưu các tùy chọn theo tên Nhân Vật
+Tự Bơm HP, MP cho Thú Triệu Hồi
+Không KS quái của người khác
+
+== Cập nhật v1.05 ===================================================
+Khó chat trong Game khi đang Auto
+Fix lỗi bị giật giật khi đánh quái ở xa
+
+== Cập nhật v1.00 => v1.04 ============================================
+Tự đánh quái với 5 Skill
+Tự Bơm HP và MP cho Nhân Vật
+Tự sử dụng XP khi đầy
+Hỡ trợ nhiều tài khoản
+Có thể Thu Gọn Auto 
+Tự thông báo khi có bản Cập Nhật
+Với mấy cái linh tinh khác ^^

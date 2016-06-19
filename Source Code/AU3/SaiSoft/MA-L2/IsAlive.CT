@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<CheatTable CheatEngineTableVersion="12">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"No description"</Description>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>001287A0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"No description"</Description>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>001293B4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"pointerscan result"</Description>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Engine.dll"+004A1BEC</Address>
+      <Offsets>
+        <Offset>78</Offset>
+        <Offset>20</Offset>
+        <Offset>1C</Offset>
+        <Offset>4F4</Offset>
+        <Offset>278</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"pointerscan result"</Description>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Engine.dll"+004AE920</Address>
+      <Offsets>
+        <Offset>78</Offset>
+        <Offset>224</Offset>
+        <Offset>3F0</Offset>
+        <Offset>48</Offset>
+        <Offset>4E0</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"pointerscan result"</Description>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Engine.dll"+0049F12C</Address>
+      <Offsets>
+        <Offset>78</Offset>
+        <Offset>224</Offset>
+        <Offset>3F0</Offset>
+        <Offset>48</Offset>
+        <Offset>4DC</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>5</ID>
+      <Description>"pointerscan result"</Description>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Engine.dll"+004AE888</Address>
+      <Offsets>
+        <Offset>78</Offset>
+        <Offset>224</Offset>
+        <Offset>3F0</Offset>
+        <Offset>48</Offset>
+        <Offset>4E4</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"pointerscan result"</Description>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Engine.dll"+004AA9AC</Address>
+      <Offsets>
+        <Offset>8</Offset>
+        <Offset>2C</Offset>
+        <Offset>408</Offset>
+        <Offset>5CC</Offset>
+        <Offset>738</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"pointerscan result"</Description>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Engine.dll"+004AA998</Address>
+      <Offsets>
+        <Offset>8</Offset>
+        <Offset>2C</Offset>
+        <Offset>408</Offset>
+        <Offset>5CC</Offset>
+        <Offset>738</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"pointerscan result"</Description>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Engine.dll"+004AAD30</Address>
+      <Offsets>
+        <Offset>8</Offset>
+        <Offset>2C</Offset>
+        <Offset>408</Offset>
+        <Offset>5CC</Offset>
+        <Offset>738</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>9</ID>
+      <Description>"pointerscan result"</Description>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Engine.dll"+004A6090</Address>
+      <Offsets>
+        <Offset>8</Offset>
+        <Offset>78</Offset>
+        <Offset>2C0</Offset>
+        <Offset>4B4</Offset>
+        <Offset>278</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"pointerscan result"</Description>
+      <Color>80000008</Color>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"Engine.dll"+004A601C</Address>
+      <Offsets>
+        <Offset>8</Offset>
+        <Offset>78</Offset>
+        <Offset>2C0</Offset>
+        <Offset>4B4</Offset>
+        <Offset>278</Offset>
+      </Offsets>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
