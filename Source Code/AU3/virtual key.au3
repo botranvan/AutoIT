@@ -207,7 +207,7 @@ The Virtual-Key define in WinUser.h//WinUser.h
 #define VK_OEM_4 0xDB // '[{' for US 
 #define VK_OEM_5 0xDC // '\|' for US 
 #define VK_OEM_6 0xDD // ']}' for US 
-#define VK_OEM_7 0xDE // ''"' for US 
+#define VK_OEM_7 0xDE // '"' for US 
 #define VK_OEM_8 0xDF 
 
 /* 
