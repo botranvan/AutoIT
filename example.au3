@@ -10,8 +10,7 @@
 #pragma compile(ProductVersion, 1.0)
 ; #NoTrayIcon
 #include <MsgBoxConstants.au3>
-#include <StringConstants.au3>
-#include <Array.au3>
+#include <FileConstants.au3>
 
 
 ; #RequireAdmin
@@ -20,8 +19,3 @@ HotKeySet("{ESC}", "_Terminates")
 Func _Terminates()
 	Exit
 EndFunc   ;==>_Terminates
-
-Local $fileOpen = FileOpenDialog("Choose File", @ScriptDir & "\", "AutoScript (*.au3)")
-Local $fileHandle = FileOpen($fileOpen)
-
-ConsoleWrite(FileReadLine($fileHandle, 9))

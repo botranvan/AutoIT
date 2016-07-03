@@ -10,8 +10,8 @@
 #pragma compile(ProductVersion, 1.0)
 ; #NoTrayIcon
 #include <MsgBoxConstants.au3>
-#include <StringConstants.au3>
-#include <Array.au3>
+#include <FileConstants.au3>
+
 
 
 ; #RequireAdmin
