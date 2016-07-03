@@ -11,7 +11,6 @@
 ; #NoTrayIcon
 #include <MsgBoxConstants.au3>
 #include <GUIConstants.au3>
-#include <WindowsConstants.au3>
 
 
 ; #RequireAdmin
@@ -21,5 +20,13 @@ Func _Terminates()
 	Exit
 EndFunc   ;==>_Terminates
 
+Local  $GUICreate = GUICreate("AutoIT", default, default, default, default, $WS_POPUP, $WS_EX_TRANSPARENT)
+GUICtrlCreateButton("Send", 100, 100, 90, 30)
+GUISetState(@SW_SHOW, $GUICreate)
 
-
+While True
+	Switch GUIGetMsg()
+		Case $GUI_EVENT_CLOSE
+			ExitLoop
+	EndSwitch
+WEnd
