@@ -11,6 +11,7 @@
 ; #NoTrayIcon
 #include <MsgBoxConstants.au3>
 #include <GUIConstants.au3>
+#include <WindowsConstants.au3>
 
 
 ; #RequireAdmin
@@ -19,7 +20,12 @@ HotKeySet("{ESC}", "_Terminates")
 Func _Terminates()
 	Exit
 EndFunc   ;==>_Terminates
-
+; Use -1 to combine $WS_MINIMIZEBOX + $WS_CAPTION + $WS_POPUP +  $WS_SYSMENU
+Local  $guiHandle = GUICreate("AutoIT", 240, 320, Default, Default, $WS_CAPTION + $WS_POPUP, $WS_EX_TRANSPARENT)
+Local  $buttonSend = GUICtrlCreateButton("Send", 5, 285, 90, 30)
+Local  $buttonCancel = GUICtrlCreateButton("Cancel", 145, 285, 90, 30)
+GUISetState(@SW_SHOW, $guiHandle)
+ConsoleWrite(GUICtrlRead($buttonSend, $GUI_READ_EXTENDED))
 While True
 	Switch GUIGetMsg()
 		Case $GUI_EVENT_CLOSE
