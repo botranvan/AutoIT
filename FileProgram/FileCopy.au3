@@ -10,7 +10,8 @@
 #pragma compile(ProductVersion, 1.0)
 ; #NoTrayIcon
 #include <MsgBoxConstants.au3>
-#include <WinAPIFiles.au3>
+#include <FileConstants.au3>
+
 ; #RequireAdmin
 
 HotKeySet("{ESC}", "_Terminates")
@@ -18,3 +19,10 @@ Func _Terminates()
 	Exit
 EndFunc   ;==>_Terminates
 
+Local  $filePath = @AppDataDir & "\Sublime Text 3\Packages\AutoItScript\Keywords.sublime-completions"
+
+If FileExists($filePath) Then
+	FileCopy($filePath, @ScriptDir & "\Keywords.sublime-completions", $FO_OVERWRITE)
+Else
+	ConsoleWrite("Have error!")
+EndIf
