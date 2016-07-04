@@ -11,6 +11,7 @@
 ; #NoTrayIcon
 #include <MsgBoxConstants.au3>
 #include <GUIConstants.au3>
+#include <WindowsConstants.au3>
 
 
 ; #RequireAdmin
@@ -19,14 +20,20 @@ HotKeySet("{ESC}", "_Terminates")
 Func _Terminates()
 	Exit
 EndFunc   ;==>_Terminates
-
-Local  $GUICreate = GUICreate("AutoIT", default, default, default, default, $WS_POPUP, $WS_EX_TRANSPARENT)
-GUICtrlCreateButton("Send", 100, 100, 90, 30)
-GUISetState(@SW_SHOW, $GUICreate)
-
+; Use -1 to combine $WS_MINIMIZEBOX + $WS_CAPTION + $WS_POPUP +  $WS_SYSMENU
+Local  $guiHandle = GUICreate("AutoIT", 320, 320, Default, Default, $WS_CAPTION + $WS_POPUP, $WS_EX_TRANSPARENT)
+Local  $guiAvi = GUICtrlCreateAvi(@SystemDir & "\shell32.dll", 165, 15, 0,300)
+Local  $buttonSend = GUICtrlCreateButton("Start", 5, 285, 90, 30)
+Local  $buttonCancel = GUICtrlCreateButton("Stop", 225, 285, 90, 30)
+GUISetState(@SW_SHOW, $guiHandle)
+ConsoleWrite(GUICtrlRead($buttonSend, $GUI_READ_EXTENDED))
 While True
 	Switch GUIGetMsg()
 		Case $GUI_EVENT_CLOSE
 			ExitLoop
+		Case $buttonSend
+			GUICtrlSetState($guiAvi, $GUI_AVISTART)
+		Case $buttonCancel
+			GUICtrlSetState($guiAvi, $GUI_AVISTOP)
 	EndSwitch
 WEnd
