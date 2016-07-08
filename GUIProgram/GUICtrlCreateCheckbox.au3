@@ -22,7 +22,7 @@ Func _Terminates()
 EndFunc   ;==>_Terminates
 
 ; Use -1 to combine $WS_MINIMIZEBOX + $WS_CAPTION + $WS_POPUP +  $WS_SYSMENU
-Local $guiHandle = GUICreate("AutoIT", 240, 320, Default, Default, $WS_CAPTION + $WS_POPUP, $WS_EX_TRANSPARENT)
+Local $guiHandle = GUICreate("AutoIT", 240, 320, Default, Default, $WS_POPUP, $WS_EX_TRANSPARENT)
 Local $checkedYes = GUICtrlCreateCheckbox("Yes", 55, 200)
 Local $checkedNo = GUICtrlCreateCheckbox("No", 125, 200)
 
