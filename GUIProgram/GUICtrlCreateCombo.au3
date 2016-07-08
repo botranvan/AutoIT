@@ -21,7 +21,7 @@ Func _Terminates()
 EndFunc   ;==>_Terminates
 
 Local  $guiHandle = GUICreate("AutoIT", 320, 320, Default, Default, $WS_CAPTION, $WS_EX_TRANSPARENT)
-Local  $comboDay = GUICtrlCreateCombo("Day", 5, 20, 50, 20, $CBS_DROPDOWN + $WS_VSCROLL, $WS_EX_CLIENTEDGE)
+Local  $comboDay = GUICtrlCreateCombo("Day", 5, 20, 50, 90, $CBS_DROPDOWN + $WS_VSCROLL, $WS_EX_CLIENTEDGE)
 ; Add additional items to the combobox
 
 ; GUICtrlSetData($comboDay, "01|02|03|04|05|06|07|08|09|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31", "Day")
