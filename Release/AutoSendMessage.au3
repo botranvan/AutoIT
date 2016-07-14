@@ -28,10 +28,6 @@ HotKeySet("{F3}", "_Send_Message")
 ; 	Local $objShell = ObjCreate("Shell.Application")
 ; 	$objShell.MinimizeAll
 ; EndFunc   ;==>_RunProcess
-OnAutoItExitRegister("_ExitProcess")
-Func _ExitProcess()
-	MsgBox($MB_ICONINFORMATION, "Exiting", "Đang dừng...", 1)
-EndFunc   ;==>_ExitProcess
 While True
 	Sleep(10000)
 WEnd
