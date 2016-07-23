@@ -1,0 +1,16 @@
+Sau khi download file Mt.PassSaver.rar ve, de tao. server rieng cho ban. ban. can` thay doi~ cac' yeu' to' sau:
+
+- Edit file mysql.php cho phu hop voi server (trong thu muc myserver - doi sang dinh dang *.txt la` co' the~ thay doi)
+- Edit file Mt.PassSaver.au3:
+  + $myserver = "http://mtmodz.2kool4u.net" ;co the tuy chinh tuy theo ten host cua ban
+- Edit file server2.php:
+  + [SERVER ONLINE]@1.2.0.014#PassSaver by M.T!!!   
+         De~ ngat ket noi toi server doi SERVER ONLINE => SERVER OFFLINE
+         @1.2.0.014#  :  phien ban moi nhat cua phan mem
+         PassSaver by M.T   : thong bao' tu` server
+
+
+Ngoai ra con` co' file: mymems.php va` mypass.php de~ theo doi~ cac thong tin can thiet
+
+
+Edit xong, upload tat ca file trong myserver len host

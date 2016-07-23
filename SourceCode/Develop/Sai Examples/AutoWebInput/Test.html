@@ -1,0 +1,70 @@
+<html>
+<head></head>
+<body>
+
+<form method="post" name="TestForm">
+<INPUT TYPE=HIDDEN NAME=ACTION VALUE=CREATE>
+<INPUT TYPE=HIDDEN NAME=OPERATIONID VALUE=1>
+
+
+<input type="hidden" name="ACTION" id="ACTION" value="ADD">
+
+<table class=opl_filter style="width:643px">
+<tr>
+<td style="width:443px">
+Region
+</td>
+<td>
+<select name="REGIONID" size=3 multiple="multiple" id="REGIONID" style="width:443px">
+
+<option value=0 >Centre</option>
+
+<option value=1 selected >North</option>
+
+<option value=2 >South</option>
+
+</select>
+</td>
+</tr>
+
+
+
+<tr>
+<td>
+Severity
+</td>
+<td>
+<select name="SEVERITYID" id="SEVERITYID" style="font-family:Verdana;font-size:10pt;width:100%;">
+
+<option value=1 >1</option>
+
+<option value=2 >2</option>
+
+<option value=3 selected >3</option>
+
+<option value=4 >4</option>
+
+</select>
+</td>
+</tr>
+
+
+<tr>
+<td><span id="Label7">Description</span></td>
+<td><textarea name="DESCRIPTION" id="DESCRIPTION" style="font-family:Verdana;font-size:10pt;height:127px;width:100%;"></textarea></td>
+</tr>
+
+<tr>
+<td></td>
+<td align="right">
+<input class=button type="submit" name="bOk" value="Ok" id="bOk" style="width:100px;" >&nbsp;
+<input class=button type="submit" name="CANCEL" value="CANCEL" id="CANCEL" style="width:100px;" >
+</td>
+</tr>
+</table>
+
+
+
+</form>
+<body>
+</html>

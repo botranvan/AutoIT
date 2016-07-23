@@ -1,0 +1,72 @@
+{
+	"scope": "source.autoit",
+	"completions": [
+		// #INDEX# ===========================================================
+		// Title .........: MsgBox_Constants
+		// AutoIt Version : 3.3.14.2
+		// Language ......: English
+		// Description ...: Constants to be included in an AutoIt v3 script when using function MsgBox.
+		// Author(s) .....: guinness, jpm
+		// ===================================================================
+
+		// #CONSTANTS# ===========================================================
+		// Message Box Constants
+		// Indicates the buttons displayed in the message box
+		{ "trigger": "$MB_OK = 0 ; One push button: OK", "contents": "\\$MB_OK"},
+		{ "trigger": "$MB_OKCANCEL = 1 ; Two push buttons: OK and Cancel", "contents": "\\$MB_OKCANCEL"},
+		{ "trigger": "$MB_ABORTRETRYIGNORE = 2 ; Three push buttons: Abort, Retry, and Ignore", "contents": "\\$MB_ABORTRETRYIGNORE"},
+		{ "trigger": "$MB_YESNOCANCEL = 3 ; Three push buttons: Yes, No, and Cancel", "contents": "\\$MB_YESNOCANCEL"},
+		{ "trigger": "$MB_YESNO = 4 ; Two push buttons: Yes and No", "contents": "\\$MB_YESNO"},
+		{ "trigger": "$MB_RETRYCANCEL = 5 ; Two push buttons: Retry and Cancel", "contents": "\\$MB_RETRYCANCEL"},
+		{ "trigger": "$MB_CANCELTRYCONTINUE = 6 ; Three buttons: Cancel, Try Again and Continue", "contents": "\\$MB_CANCELTRYCONTINUE"},
+		{ "trigger": "$MB_HELP = 0x4000 ; Adds a Help button to the message box. When the user clicks the Help button or presses F1, the system sends a WM_HELP message to the owner.", "contents": "\\$MB_HELP"},
+
+		// Displays an icon in the message box
+		{ "trigger": "$MB_ICONSTOP = 16 ; Stop-sign icon", "contents": "\\$MB_ICONSTOP"},
+		{ "trigger": "$MB_ICONERROR = 16 ; Stop-sign icon", "contents": "\\$MB_ICONERROR"},
+		{ "trigger": "$MB_ICONHAND = 16 ; Stop-sign icon", "contents": "\\$MB_ICONHAND"},
+		{ "trigger": "$MB_ICONQUESTION = 32 ; Question-mark icon", "contents": "\\$MB_ICONQUESTION"},
+		{ "trigger": "$MB_ICONEXCLAMATION = 48 ; Exclamation-point icon", "contents": "\\$MB_ICONEXCLAMATION"},
+		{ "trigger": "$MB_ICONWARNING = 48 ; Exclamation-point icon", "contents": "\\$MB_ICONWARNING"},
+		{ "trigger": "$MB_ICONINFORMATION = 64 ; Icon consisting of an 'i' in a circle", "contents": "\\$MB_ICONINFORMATION"},
+		{ "trigger": "$MB_ICONASTERISK = 64 ; Icon consisting of an 'i' in a circle", "contents": "\\$MB_ICONASTERISK"},
+		{ "trigger": "$MB_USERICON = 0x00000080", "contents": "\\$MB_USERICON"},
+
+		// Indicates the default button
+		{ "trigger": "$MB_DEFBUTTON1 = 0 ; The first button is the default button", "contents": "\\$MB_DEFBUTTON1"},
+		{ "trigger": "$MB_DEFBUTTON2 = 256 ; The second button is the default button", "contents": "\\$MB_DEFBUTTON2"},
+		{ "trigger": "$MB_DEFBUTTON3 = 512 ; The third button is the default button", "contents": "\\$MB_DEFBUTTON3"},
+		{ "trigger": "$MB_DEFBUTTON4 = 768 ; The fourth button is the default button.", "contents": "\\$MB_DEFBUTTON4"},
+
+		// Indicates the modality of the dialog box
+		{ "trigger": "$MB_APPLMODAL = 0 ; Application modal", "contents": "\\$MB_APPLMODAL"},
+		{ "trigger": "$MB_SYSTEMMODAL = 4096 ; System modal", "contents": "\\$MB_SYSTEMMODAL"},
+		{ "trigger": "$MB_TASKMODAL = 8192 ; Task modal", "contents": "\\$MB_TASKMODAL"},
+
+		// Indicates miscellaneous message box attributes
+		{ "trigger": "$MB_DEFAULT_DESKTOP_ONLY = 0x00020000 ; Same as desktop of the interactive window station", "contents": "\\$MB_DEFAULT_DESKTOP_ONLY"},
+		{ "trigger": "$MB_RIGHT = 0x00080000 ; The text is right-justified.", "contents": "\\$MB_RIGHT"},
+		{ "trigger": "$MB_RTLREADING = 0x00100000 ; Displays message and caption text using right-to-left reading order on Hebrew and Arabic systems.", "contents": "\\$MB_RTLREADING"},
+		{ "trigger": "$MB_SETFOREGROUND = 0x00010000 ; The message box becomes the foreground window", "contents": "\\$MB_SETFOREGROUND"},
+		{ "trigger": "$MB_TOPMOST = 0x00040000 ; The message box is created with the WS_EX_TOPMOST window style.", "contents": "\\$MB_TOPMOST"},
+		{ "trigger": "$MB_SERVICE_NOTIFICATION = 0x00200000 ; The caller is a service notifying the user of an event.", "contents": "\\$MB_SERVICE_NOTIFICATION"},
+
+		{ "trigger": "$MB_RIGHTJUSTIFIED = $MB_RIGHT ; Do not use, see $MB_RIGHT. Included for backwards compatibility.", "contents": "\\$MB_RIGHTJUSTIFIED"},
+
+		// Indicates the button selected in the message box
+		{ "trigger": "$IDTIMEOUT = -1 ; The message box timed out", "contents": "\\$IDTIMEOUT ="},
+		{ "trigger": "$IDOK = 1 ; OK button was selected", "contents": "\\$IDOK"},
+		{ "trigger": "$IDCANCEL = 2 ; Cancel button was selected", "contents": "\\$IDCANCEL"},
+		{ "trigger": "$IDABORT = 3 ; Abort button was selected", "contents": "\\$IDABORT"},
+		{ "trigger": "$IDRETRY = 4 ; Retry button was selected", "contents": "\\$IDRETRY"},
+		{ "trigger": "$IDIGNORE = 5 ; Ignore button was selected", "contents": "\\$IDIGNORE"},
+		{ "trigger": "$IDYES = 6 ; Yes button was selected", "contents": "\\$IDYES"},
+		{ "trigger": "$IDNO = 7 ; No button was selected", "contents": "\\$IDNO"},
+		{ "trigger": "$IDCLOSE = 8 ; Close button was selected", "contents": "\\$IDCLOSE"},
+		{ "trigger": "$IDHELP = 9 ; Help button was selected", "contents": "\\$IDHELP"},
+		{ "trigger": "$IDTRYAGAIN = 10 ; Try Again button was selected", "contents": "\\$IDTRYAGAIN"},
+		{ "trigger": "$IDCONTINUE = 11 ; Continue button was selected", "contents": "\\$IDCONTINUE"}
+		// ===================================================================
+
+	]
+}

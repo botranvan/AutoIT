@@ -1,0 +1,71 @@
+{
+	"scope": "source.autoit",
+	"completions": [
+		// #INDEX# ===================================
+		// Title .........: Constants
+		// AutoIt Version : 3.3.14.2
+		// Language ......: English
+		// Description ...: Constants to be included in an AutoIt v3 script.
+		// Author(s) .....: JLandes, Nutster, CyberSlug, Holger, ...
+		// ===============================
+
+		// #CONSTANTS# ===============================
+
+		// Tray predefined ID's
+		{"trigger": "$TRAY_ITEM_EXIT = 3", "contents": "\\$TRAY_ITEM_EXIT"},
+		{"trigger": "$TRAY_ITEM_PAUSE = 4", "contents": "\\$TRAY_ITEM_PAUSE"},
+		{"trigger": "$TRAY_ITEM_FIRST = 7", "contents": "\\$TRAY_ITEM_FIRST"},
+
+		//  Tray menu/item state values
+		{"trigger": "$TRAY_CHECKED = 1", "contents": "\\$TRAY_CHECKED"},
+		{"trigger": "$TRAY_UNCHECKED = 4", "contents": "\\$TRAY_UNCHECKED"},
+		{"trigger": "$TRAY_ENABLE = 64", "contents": "\\$TRAY_ENABLE"},
+		{"trigger": "$TRAY_DISABLE = 128", "contents": "\\$TRAY_DISABLE"},
+		{"trigger": "$TRAY_FOCUS = 256", "contents": "\\$TRAY_FOCUS"},
+		{"trigger": "$TRAY_DEFAULT = 512", "contents": "\\$TRAY_DEFAULT"},
+
+		//  Tray event values
+		{"trigger": "$TRAY_EVENT_NONE = 0", "contents": "\\$TRAY_EVENT_NONE"},
+		{"trigger": "$TRAY_EVENT_SHOWICON = -3", "contents": "\\$TRAY_EVENT_SHOWICON"},
+		{"trigger": "$TRAY_EVENT_HIDEICON = -4", "contents": "\\$TRAY_EVENT_HIDEICON"},
+		{"trigger": "$TRAY_EVENT_FLASHICON = -5", "contents": "\\$TRAY_EVENT_FLASHICON"},
+		{"trigger": "$TRAY_EVENT_NOFLASHICON = -6", "contents": "\\$TRAY_EVENT_NOFLASHICON"},
+		{"trigger": "$TRAY_EVENT_PRIMARYDOWN = -7", "contents": "\\$TRAY_EVENT_PRIMARYDOWN"},
+		{"trigger": "$TRAY_EVENT_PRIMARYUP = -8", "contents": "\\$TRAY_EVENT_PRIMARYUP"},
+		{"trigger": "$TRAY_EVENT_SECONDARYDOWN = -9", "contents": "\\$TRAY_EVENT_SECONDARYDOWN"},
+		{"trigger": "$TRAY_EVENT_SECONDARYUP = -10", "contents": "\\$TRAY_EVENT_SECONDARYUP"},
+		{"trigger": "$TRAY_EVENT_MOUSEOVER = -11", "contents": "\\$TRAY_EVENT_MOUSEOVER"},
+		{"trigger": "$TRAY_EVENT_MOUSEOUT = -12", "contents": "\\$TRAY_EVENT_MOUSEOUT"},
+		{"trigger": "$TRAY_EVENT_PRIMARYDOUBLE = -13", "contents": "\\$TRAY_EVENT_PRIMARYDOUBLE"},
+		{"trigger": "$TRAY_EVENT_SECONDARYDOUBLE = -14", "contents": "\\$TRAY_EVENT_SECONDARYDOUBLE"},
+
+		//  Indicates the type of Balloon Tip to display
+		{"trigger": "$TIP_ICONNONE = 0 ; No icon (default)", "contents": "\\$TIP_ICONNONE"},
+		{"trigger": "$TIP_ICONASTERISK = 1 ; Info icon", "contents": "\\$TIP_ICONASTERISK"},
+		{"trigger": "$TIP_ICONEXCLAMATION = 2 ; Warning icon", "contents": "\\$TIP_ICONEXCLAMATION"},
+		{"trigger": "$TIP_ICONHAND = 3 ; Error icon", "contents": "\\$TIP_ICONHAND"},
+		{"trigger": "$TIP_NOSOUND = 16 ; No sound", "contents": "\\$TIP_NOSOUND"},
+
+		//  TrayCreateItem values
+		{"trigger": "$TRAY_ITEM_NORMAL = 0", "contents": "\\$TRAY_ITEM_NORMAL"},
+		{"trigger": "$TRAY_ITEM_RADIO = 1", "contents": "\\$TRAY_ITEM_RADIO"},
+
+		//  TraySetClick values
+		{"trigger": "$TRAY_CLICK_SHOW = 0", "contents": "\\$TRAY_CLICK_SHOW"},
+		{"trigger": "$TRAY_CLICK_PRIMARYDOWN = 1", "contents": "\\$TRAY_CLICK_PRIMARYDOWN"},
+		{"trigger": "$TRAY_CLICK_PRIMARYUP = 2", "contents": "\\$TRAY_CLICK_PRIMARYUP"},
+		{"trigger": "$TRAY_DBLCLICK_PRIMARY= 4", "contents": "\\$TRAY_DBLCLICK_PRIMARY"},
+		{"trigger": "$TRAY_CLICK_SECONDARYDOWN = 8", "contents": "\\$TRAY_CLICK_SECONDARYDOWN"},
+		{"trigger": "$TRAY_CLICK_SECONDARYUP = 16", "contents": "\\$TRAY_CLICK_SECONDARYUP"},
+		{"trigger": "$TRAY_DBLCLICK_SECONDARY= 32", "contents": "\\$TRAY_DBLCLICK_SECONDARY"},
+		{"trigger": "$TRAY_CLICK_HOVERING= 64", "contents": "\\$TRAY_CLICK_HOVERING"},
+
+		//  TraySetState values
+		{"trigger": "$TRAY_ICONSTATE_SHOW = 1", "contents": "\\$TRAY_ICONSTATE_SHOW"},
+		{"trigger": "$TRAY_ICONSTATE_HIDE = 2", "contents": "\\$TRAY_ICONSTATE_HIDE"},
+		{"trigger": "$TRAY_ICONSTATE_FLASH = 4", "contents": "\\$TRAY_ICONSTATE_FLASH"},
+		{"trigger": "$TRAY_ICONSTATE_STOPFLASH = 8", "contents": "\\$TRAY_ICONSTATE_STOPFLASH"},
+		{"trigger": "$TRAY_ICONSTATE_RESET = 16", "contents": "\\$TRAY_ICONSTATE_RESET"}
+		//  ===============================
+	]
+}

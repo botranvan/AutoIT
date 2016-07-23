@@ -1,0 +1,66 @@
+{
+	"scope": "source.autoit",
+	"completions": [
+		// #INDEX# ============================================================
+		// Title .........: Process_Constants
+		// AutoIt Version : 3.3.14.2
+		// Language ......: English
+		// Description ...: Constants to be included in an AutoIt v3 script when using Process functions.
+		// Author(s) .....: Valik, Gary Frost, ...
+		// ====================================================================
+
+		// #CONSTANTS# ============================================================
+		{"trigger": "$PROCESS_TERMINATE = 0x00000001", "contents" : "\\$PROCESS_TERMINATE"},
+		{"trigger": "$PROCESS_CREATE_THREAD = 0x00000002", "contents" : "\\$PROCESS_CREATE_THREAD"},
+		{"trigger": "$PROCESS_SET_SESSIONID = 0x00000004", "contents" : "\\$PROCESS_SET_SESSIONID"},
+		{"trigger": "$PROCESS_VM_OPERATION = 0x00000008", "contents" : "\\$PROCESS_VM_OPERATION"},
+		{"trigger": "$PROCESS_VM_READ = 0x00000010", "contents" : "\\$PROCESS_VM_READ"},
+		{"trigger": "$PROCESS_VM_WRITE = 0x00000020", "contents" : "\\$PROCESS_VM_WRITE"},
+		{"trigger": "$PROCESS_DUP_HANDLE = 0x00000040", "contents" : "\\$PROCESS_DUP_HANDLE"},
+		{"trigger": "$PROCESS_CREATE_PROCESS = 0x00000080", "contents" : "\\$PROCESS_CREATE_PROCESS"},
+		{"trigger": "$PROCESS_SET_QUOTA = 0x00000100", "contents" : "\\$PROCESS_SET_QUOTA"},
+		{"trigger": "$PROCESS_SET_INFORMATION = 0x00000200", "contents" : "\\$PROCESS_SET_INFORMATION"},
+		{"trigger": "$PROCESS_QUERY_INFORMATION = 0x00000400", "contents" : "\\$PROCESS_QUERY_INFORMATION"},
+		{"trigger": "$PROCESS_QUERY_LIMITED_INFORMATION = 0x1000", "contents" : "\\$PROCESS_QUERY_LIMITED_INFORMATION"},
+		{"trigger": "$PROCESS_SUSPEND_RESUME = 0x00000800", "contents" : "\\$PROCESS_SUSPEND_RESUME"},
+		{"trigger": "$PROCESS_ALL_ACCESS = 0x001F0FFF", "contents" : "\\$PROCESS_ALL_ACCESS"},
+		// ============================================================
+		// #INDEX# ============================================================
+		// Title .........: Progress_Constants
+		// AutoIt Version : 3.3.14.2
+		// Language ......: English
+		// Description ...: <a href="../appendix/GUIStyles.htm#Progress">GUI control Progress styles</a> and much more constants.
+		// Author(s) .....: Valik, Gary Frost, ...
+		// ====================================================================
+
+		// #CONSTANT# ============================================================
+		// Styles
+		{"trigger": "$PBS_MARQUEE = 0x00000008 ; The progress bar moves like a marquee", "contents" : "\\$PBS_MARQUEE"},
+		{"trigger": "$PBS_SMOOTH = 1", "contents" : "\\$PBS_SMOOTH"},
+		{"trigger": "$PBS_SMOOTHREVERSE = 0x10 ; Vista", "contents" : "\\$PBS_SMOOTHREVERSE"},
+		{"trigger": "$PBS_VERTICAL = 4", "contents" : "\\$PBS_VERTICAL"},
+
+		// Control default styles
+		{"trigger": "$GUI_SS_DEFAULT_PROGRESS = 0", "contents" : "\\$GUI_SS_DEFAULT_PROGRESS"},
+
+		// Messages
+		{"trigger": "$__PROGRESSBARCONSTANT_WM_USER = 0X400", "contents" : "\\$__PROGRESSBARCONSTANT_WM_USER"},
+		{"trigger": "$PBM_DELTAPOS = $__PROGRESSBARCONSTANT_WM_USER + 3", "contents" : "\\$PBM_DELTAPOS"},
+		{"trigger": "$PBM_GETBARCOLOR = 0x040F ; Vista", "contents" : "\\$PBM_GETBARCOLOR"},
+		{"trigger": "$PBM_GETBKCOLOR = 0x040E ; Vista", "contents" : "\\$PBM_GETBKCOLOR"},
+		{"trigger": "$PBM_GETPOS = $__PROGRESSBARCONSTANT_WM_USER + 8", "contents" : "\\$PBM_GETPOS"},
+		{"trigger": "$PBM_GETRANGE = $__PROGRESSBARCONSTANT_WM_USER + 7", "contents" : "\\$PBM_GETRANGE"},
+		{"trigger": "$PBM_GETSTATE = 0x0411 ; Vista", "contents" : "\\$PBM_GETSTATE"},
+		{"trigger": "$PBM_GETSTEP = 0x040D ; Vista", "contents" : "\\$PBM_GETSTEP"},
+		{"trigger": "$PBM_SETBARCOLOR = $__PROGRESSBARCONSTANT_WM_USER + 9", "contents" : "\\$PBM_SETBARCOLOR"},
+		{"trigger": "$PBM_SETBKCOLOR = 0x2000 + 1", "contents" : "\\$PBM_SETBKCOLOR"},
+		{"trigger": "$PBM_SETMARQUEE = $__PROGRESSBARCONSTANT_WM_USER + 10", "contents" : "\\$PBM_SETMARQUEE"},
+		{"trigger": "$PBM_SETPOS = $__PROGRESSBARCONSTANT_WM_USER + 2", "contents" : "\\$PBM_SETPOS"},
+		{"trigger": "$PBM_SETRANGE = $__PROGRESSBARCONSTANT_WM_USER + 1", "contents" : "\\$PBM_SETRANGE"},
+		{"trigger": "$PBM_SETRANGE32 = $__PROGRESSBARCONSTANT_WM_USER + 6", "contents" : "\\$PBM_SETRANGE32"},
+		{"trigger": "$PBM_SETSTATE = 0x0410 ; Vista", "contents" : "\\$PBM_SETSTATE"},
+		{"trigger": "$PBM_SETSTEP = $__PROGRESSBARCONSTANT_WM_USER + 4", "contents" : "\\$PBM_SETSTEP"},
+		{"trigger": "$PBM_STEPIT = $__PROGRESSBARCONSTANT_WM_USER + 5", "contents" : "\\$PBM_STEPIT"}
+		// ====================================================================
+	]
+}

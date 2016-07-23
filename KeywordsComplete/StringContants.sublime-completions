@@ -1,0 +1,58 @@
+{
+	"scope": "source.autoit",
+	"completions": [
+		// #INDEX# ================================================================
+		// Title .........: String_Constants
+		// AutoIt Version : 3.3.14.2
+		// Language ......: English
+		// Description ...: Constants to be included in an AutoIt v3 script when using String functions.
+		// Author(s) .....: guinness, jpm
+		// ============================================================
+		// #CONSTANTS# ============================================================
+		// StringCompare, StringInStr, StringReplace constants
+		// Indicates if string operations should be case sensitive
+		{"trigger": "$STR_NOCASESENSE = 0 ; Not case sensitive (default)", "contents": "\\$STR_NOCASESENSE"},
+		{"trigger": "$STR_CASESENSE = 1 ; Case sensitive", "contents": "\\$STR_CASESENSE"},
+		{"trigger": "$STR_NOCASESENSEBASIC = 2 ; Not case sensitive, using a basic comparison", "contents": "\\$STR_NOCASESENSEBASIC"},
+
+		// StringStripWS Constants
+		// Indicates the type of stripping that should be performed
+		{"trigger": "$STR_STRIPLEADING = 1 ; Strip leading whitespace", "contents": "\\$STR_STRIPLEADING"},
+		{"trigger": "$STR_STRIPTRAILING = 2 ; Strip trailing whitespace", "contents": "\\$STR_STRIPTRAILING"},
+		{"trigger": "$STR_STRIPSPACES = 4 ; Strip double (or more) spaces between words", "contents": "\\$STR_STRIPSPACES"},
+		{"trigger": "$STR_STRIPALL = 8 ; Strip all spaces (over-rides all other flags)", "contents": "\\$STR_STRIPALL"},
+
+		// StringSplit Constants
+		{"trigger": "$STR_CHRSPLIT = 0 ; Each character in the delimiter string will mark the split", "contents": "\\$STR_CHRSPLIT"},
+		{"trigger": "$STR_ENTIRESPLIT = 1 ; Entire delimiter marks the split", "contents": "\\$STR_ENTIRESPLIT"},
+		{"trigger": "$STR_NOCOUNT = 2 ; Disable the return count", "contents": "\\$STR_NOCOUNT"},
+
+		// StringRegExp Constants
+		{"trigger": "$STR_REGEXPMATCH = 0 ; Return 1 if match.", "contents": "\\$STR_REGEXPMATCH"},
+		{"trigger": "$STR_REGEXPARRAYMATCH = 1 ; Return array of matches.", "contents": "\\$STR_REGEXPARRAYMATCH"},
+		{"trigger": "$STR_REGEXPARRAYFULLMATCH = 2 ; Return array of matches including the full match (Perl / PHP style).", "contents": "\\$STR_REGEXPARRAYFULLMATCH"},
+		{"trigger": "$STR_REGEXPARRAYGLOBALMATCH = 3 ; Return array of global matches.", "contents": "\\$STR_REGEXPARRAYGLOBALMATCH"},
+		{"trigger": "$STR_REGEXPARRAYGLOBALFULLMATCH = 4 ; Return an array of arrays containing global matches including the full match (Perl / PHP style).Global Const $STR_REGEXPMATCH = 0 ; Each character in the delimiter string will mark the split", "contents": "\\$STR_REGEXPARRAYGLOBALFULLMATCH"},
+
+		// _StringBetween Constants
+		{"trigger": "$STR_ENDISSTART = 0 ; End acts as next start when end = start", "contents": "\\$STR_ENDISSTART"},
+		{"trigger": "$STR_ENDNOTSTART = 1 ; End does not act as new start when end = start", "contents": "\\$STR_ENDNOTSTART"},
+
+		// BinaryToString, StringToBinary constants
+		{"trigger": "$SB_ANSI = 1", "contents": "\\$SB_ANSI"},
+		{"trigger": "$SB_UTF16LE = 2", "contents": "\\$SB_UTF16LE"},
+		{"trigger": "$SB_UTF16BE = 3", "contents": "\\$SB_UTF16BE"},
+		{"trigger": "$SB_UTF8 = 4", "contents": "\\$SB_UTF8"},
+
+		// StringFromASCIIArray constants
+		{"trigger": "$SE_UTF16 = 0", "contents": "\\$SE_UTF16"},
+		{"trigger": "$SE_ANSI = 1", "contents": "\\$SE_ANSI"},
+		{"trigger": "$SE_UTF8 = 2", "contents": "\\$SE_UTF8"},
+
+		// StringReverse Constants
+		{"trigger": "$STR_UTF16 = 0", "contents": "\\$STR_UTF16"},
+		{"trigger": "$STR_UCS2 = 1", "contents": "\\$STR_UCS2"}
+		// ============================================================
+
+	]
+}

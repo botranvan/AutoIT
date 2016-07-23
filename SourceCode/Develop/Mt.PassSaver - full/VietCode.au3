@@ -1,0 +1,168 @@
+
+Func _VIET2CODE($code)
+	;#AAAAAAAAAAAAAAAAAAAAAAA
+	$code1 = StringReplace($code, "á", "a!1")
+	$code1 = StringReplace($code1, "à", "a!2")
+	$code1 = StringReplace($code1, "?", "a!3")
+	$code1 = StringReplace($code1, "ã", "a!4")
+	$code1 = StringReplace($code1, "?", "a!5")
+	$code1 = StringReplace($code1, "â", "a!6")
+	$code1 = StringReplace($code1, "a", "a!8")
+	$code1 = StringReplace($code1, "?", "a!,16")
+	$code1 = StringReplace($code1, "?", "a!,26")
+	$code1 = StringReplace($code1, "?", "a!,36")
+	$code1 = StringReplace($code1, "?", "a!,46")
+	$code1 = StringReplace($code1, "?", "a!,56")
+	$code1 = StringReplace($code1, "?", "a!,18")
+	$code1 = StringReplace($code1, "?", "a!,28")
+	$code1 = StringReplace($code1, "?", "a!,38")
+	$code1 = StringReplace($code1, "?", "a!,48")
+	$code1 = StringReplace($code1, "?", "a!,58")
+
+	;#EEEEEEEEEEEEEEEEEEEEEE
+	$code1 = StringReplace($code1, "é", "e!1")
+	$code1 = StringReplace($code1, "è", "e!2")
+	$code1 = StringReplace($code1, "?", "e!3")
+	$code1 = StringReplace($code1, "?", "e!4")
+	$code1 = StringReplace($code1, "?", "e!5")
+	$code1 = StringReplace($code1, "ê", "e!6")
+	$code1 = StringReplace($code1, "?", "e!,16")
+	$code1 = StringReplace($code1, "?", "e!,26")
+	$code1 = StringReplace($code1, "?", "e!,36")
+	$code1 = StringReplace($code1, "?", "e!,46")
+	$code1 = StringReplace($code1, "?", "e!,56")
+
+	;#YYYYYYYYYYYYYYYYYYYYYYY
+	$code1 = StringReplace($code1, "ý", "y!1")
+	$code1 = StringReplace($code1, "?", "y!2")
+	$code1 = StringReplace($code1, "?", "y!3")
+	$code1 = StringReplace($code1, "?", "y!4")
+	$code1 = StringReplace($code1, "?", "y!5")
+
+	;#UUUUUUUUUUUUUUUUUUUUUU
+	$code1 = StringReplace($code1, "ú", "u!1")
+	$code1 = StringReplace($code1, "ù", "u!2")
+	$code1 = StringReplace($code1, "?", "u!3")
+	$code1 = StringReplace($code1, "u", "u!4")
+	$code1 = StringReplace($code1, "?", "u!5")
+	$code1 = StringReplace($code1, "u", "u!7")
+	$code1 = StringReplace($code1, "?", "u!,17")
+	$code1 = StringReplace($code1, "?", "u!,27")
+	$code1 = StringReplace($code1, "?", "u!,37")
+	$code1 = StringReplace($code1, "?", "u!,47")
+	$code1 = StringReplace($code1, "?", "u!,57")
+
+	;#UIIIIIIIIIIIIIIIIIIIII
+	$code1 = StringReplace($code1, "í", "i!1")
+	$code1 = StringReplace($code1, "ì", "i!2")
+	$code1 = StringReplace($code1, "?", "i!3")
+	$code1 = StringReplace($code1, "i", "i!4")
+	$code1 = StringReplace($code1, "?", "i!5")
+
+	;#OOOOOOOOOOOOOOOOOOOOOO
+	$code1 = StringReplace($code1, "ó", "o!1")
+	$code1 = StringReplace($code1, "ò", "o!2")
+	$code1 = StringReplace($code1, "?", "o!3")
+	$code1 = StringReplace($code1, "õ", "o!4")
+	$code1 = StringReplace($code1, "?", "o!5")
+	$code1 = StringReplace($code1, "ô", "o!6")
+	$code1 = StringReplace($code1, "o", "o!7")
+	$code1 = StringReplace($code1, "?", "o!,16")
+	$code1 = StringReplace($code1, "?", "o!,26")
+	$code1 = StringReplace($code1, "?", "o!,36")
+	$code1 = StringReplace($code1, "?", "o!,46")
+	$code1 = StringReplace($code1, "?", "o!,56")
+	$code1 = StringReplace($code1, "?", "o!,17")
+	$code1 = StringReplace($code1, "?", "o!,27")
+	$code1 = StringReplace($code1, "?", "o!,37")
+	$code1 = StringReplace($code1, "?", "o!,47")
+	$code1 = StringReplace($code1, "?", "o!,57")
+
+	;#DDDDDDDDDDDDDDDDDDDD
+	$code1 = StringReplace($code1, "d", "d!9")
+	Return $code1
+EndFunc   ;==>_VIET2CODE
+Func _CODE2VIET($thongbao1)
+	;#AAAAAAAAAAAAAAAAAAAAAAA
+	$thongbao = StringReplace($thongbao1, "a!1", "á")
+	$thongbao = StringReplace($thongbao, "a!2", "à")
+	$thongbao = StringReplace($thongbao, "a!3", "?")
+	$thongbao = StringReplace($thongbao, "a!4", "ã")
+	$thongbao = StringReplace($thongbao, "a!5", "?")
+	$thongbao = StringReplace($thongbao, "a!6", "â")
+	$thongbao = StringReplace($thongbao, "a!8", "a")
+	$thongbao = StringReplace($thongbao, "a!,16", "?")
+	$thongbao = StringReplace($thongbao, "a!,26", "?")
+	$thongbao = StringReplace($thongbao, "a!,36", "?")
+	$thongbao = StringReplace($thongbao, "a!,46", "?")
+	$thongbao = StringReplace($thongbao, "a!,56", "?")
+	$thongbao = StringReplace($thongbao, "a!,18", "?")
+	$thongbao = StringReplace($thongbao, "a!,28", "?")
+	$thongbao = StringReplace($thongbao, "a!,38", "?")
+	$thongbao = StringReplace($thongbao, "a!,48", "?")
+	$thongbao = StringReplace($thongbao, "a!,58", "?")
+
+	;#EEEEEEEEEEEEEEEEEEEEEE
+	$thongbao = StringReplace($thongbao, "e!1", "é")
+	$thongbao = StringReplace($thongbao, "e!2", "è")
+	$thongbao = StringReplace($thongbao, "e!3", "?")
+	$thongbao = StringReplace($thongbao, "e!4", "?")
+	$thongbao = StringReplace($thongbao, "e!5", "?")
+	$thongbao = StringReplace($thongbao, "e!6", "ê")
+	$thongbao = StringReplace($thongbao, "e!,16", "?")
+	$thongbao = StringReplace($thongbao, "e!,26", "?")
+	$thongbao = StringReplace($thongbao, "e!,36", "?")
+	$thongbao = StringReplace($thongbao, "e!,46", "?")
+	$thongbao = StringReplace($thongbao, "e!,56", "?")
+
+	;#YYYYYYYYYYYYYYYYYYYYYYY
+	$thongbao = StringReplace($thongbao, "y!1", "ý")
+	$thongbao = StringReplace($thongbao, "y!2", "?")
+	$thongbao = StringReplace($thongbao, "y!3", "?")
+	$thongbao = StringReplace($thongbao, "y!4", "?")
+	$thongbao = StringReplace($thongbao, "y!5", "?")
+
+	;#UUUUUUUUUUUUUUUUUUUUUU
+	$thongbao = StringReplace($thongbao, "u!1", "ú")
+	$thongbao = StringReplace($thongbao, "u!2", "ù")
+	$thongbao = StringReplace($thongbao, "u!3", "?")
+	$thongbao = StringReplace($thongbao, "u!4", "u")
+	$thongbao = StringReplace($thongbao, "u!5", "?")
+	$thongbao = StringReplace($thongbao, "u!7", "u")
+	$thongbao = StringReplace($thongbao, "u!,17", "?")
+	$thongbao = StringReplace($thongbao, "u!,27", "?")
+	$thongbao = StringReplace($thongbao, "u!,37", "?")
+	$thongbao = StringReplace($thongbao, "u!,47", "?")
+	$thongbao = StringReplace($thongbao, "u!,57", "?")
+
+	;#UIIIIIIIIIIIIIIIIIIIII
+	$thongbao = StringReplace($thongbao, "i!1", "í")
+	$thongbao = StringReplace($thongbao, "i!2", "ì")
+	$thongbao = StringReplace($thongbao, "i!3", "?")
+	$thongbao = StringReplace($thongbao, "i!4", "i")
+	$thongbao = StringReplace($thongbao, "i!5", "?")
+
+	;#OOOOOOOOOOOOOOOOOOOOOO
+	$thongbao = StringReplace($thongbao, "o!1", "ó")
+	$thongbao = StringReplace($thongbao, "o!2", "ò")
+	$thongbao = StringReplace($thongbao, "o!3", "?")
+	$thongbao = StringReplace($thongbao, "o!4", "õ")
+	$thongbao = StringReplace($thongbao, "o!5", "?")
+	$thongbao = StringReplace($thongbao, "o!6", "ô")
+	$thongbao = StringReplace($thongbao, "o!7", "o")
+	$thongbao = StringReplace($thongbao, "o!,16", "?")
+	$thongbao = StringReplace($thongbao, "o!,26", "?")
+	$thongbao = StringReplace($thongbao, "o!,36", "?")
+	$thongbao = StringReplace($thongbao, "o!,46", "?")
+	$thongbao = StringReplace($thongbao, "o!,56", "?")
+	$thongbao = StringReplace($thongbao, "o!,17", "?")
+	$thongbao = StringReplace($thongbao, "o!,27", "?")
+	$thongbao = StringReplace($thongbao, "o!,37", "?")
+	$thongbao = StringReplace($thongbao, "o!,47", "?")
+	$thongbao = StringReplace($thongbao, "o!,57", "?")
+
+	;#DDDDDDDDDDDDDDDDDDDD
+	$thongbao = StringReplace($thongbao, "d!9", "d")
+
+	Return $thongbao
+EndFunc

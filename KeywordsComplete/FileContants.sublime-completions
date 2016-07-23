@@ -1,0 +1,156 @@
+{
+	"scope": "source.autoit",
+	"completions": [
+		// #INDEX# ===========================================================
+		// Title .........: File_Constants
+		// AutoIt Version : 3.3.14.2
+		// Language ......: English
+		// Description ...: Constants to be included in an AutoIt v3 script when using File functions.
+		// Author(s) .....: Valik, Gary Frost, ...
+		// ===========================================================
+
+		// #CONSTANTS# ============================================================
+		// Indicates file copy and install options
+		{ "trigger": "$FC_NOOVERWRITE = 0 ; Do not overwrite existing files (default)", "contents": "\\$FC_NOOVERWRITE"},
+		{ "trigger": "$FC_OVERWRITE = 1 ; Overwrite existing files", "contents": "\\$FC_OVERWRITE"},
+		{ "trigger": "$FC_CREATEPATH = 8 ; Create destination directory structure if it doesn't exist", "contents": "\\$FC_CREATEPATH"},
+
+		// Indicates file date and time options
+		{ "trigger": "$FT_MODIFIED = 0 ; Date and time file was last modified (default)", "contents": "\\$FT_MODIFIED"},
+		{ "trigger": "$FT_CREATED = 1 ; Date and time file was created", "contents": "\\$FT_CREATED"},
+		{ "trigger": "$FT_ACCESSED = 2 ; Date and time file was last accessed", "contents": "\\$FT_ACCESSED"},
+
+		// FileGetTime Constants
+		{ "trigger": "$FT_ARRAY = 0", "contents": "\\$FT_ARRAY"},
+		{ "trigger": "$FT_STRING = 1", "contents": "\\$FT_STRING"},
+
+		// FileSelectFolder Constants
+		{ "trigger": "$FSF_CREATEBUTTON = 1", "contents": "\\$FSF_CREATEBUTTON"},
+		{ "trigger": "$FSF_NEWDIALOG = 2", "contents": "\\$FSF_NEWDIALOG"},
+		{ "trigger": "$FSF_EDITCONTROL = 4", "contents": "\\$FSF_EDITCONTROL"},
+
+		// FileSetTime, FileSetAttrib
+		{ "trigger": "$FT_NONRECURSIVE = 0", "contents": "\\$FT_NONRECURSIVE"},
+		{ "trigger": "$FT_RECURSIVE = 1", "contents": "\\$FT_RECURSIVE"},
+
+		// Indicates the mode to open a file
+		{ "trigger": "$FO_READ = 0 ; Read mode", "contents": "\\$FO_READ"},
+		{ "trigger": "$FO_APPEND = 1 ; Write mode (append)", "contents": "\\$FO_APPEND"},
+		{ "trigger": "$FO_OVERWRITE = 2 ; Write mode (erase previous contents)", "contents": "\\$FO_OVERWRITE"},
+		{ "trigger": "$FO_CREATEPATH = 8 ; Create directory structure if it doesn't exist", "contents": "\\$FO_CREATEPATH"},
+		{ "trigger": "$FO_BINARY = 16 ; Read/Write mode binary", "contents": "\\$FO_BINARY"},
+		{ "trigger": "$FO_UNICODE = 32 ; Write mode Unicode UTF16-LE", "contents": "\\$FO_UNICODE"},
+		{ "trigger": "$FO_UTF16_LE = 32 ; Write mode Unicode UTF16-LE", "contents": "\\$FO_UTF16_LE"},
+		{ "trigger": "$FO_UTF16_BE = 64 ; Write mode Unicode UTF16-BE", "contents": "\\$FO_UTF16_BE"},
+		{ "trigger": "$FO_UTF8 = 128 ; Read/Write mode UTF8 with BOM", "contents": "\\$FO_UTF8"},
+		{ "trigger": "$FO_UTF8_NOBOM = 256 ; Read/Write mode UTF8 with no BOM", "contents": "\\$FO_UTF8_NOBOM"},
+		{ "trigger": "$FO_ANSI = 512 ; Read/Write mode ANSI", "contents": "\\$FO_ANSI"},
+		{ "trigger": "$FO_UTF16_LE_NOBOM = 1024 ; Write mode Unicode UTF16-LE with no BOM", "contents": "\\$FO_UTF16_LE_NOBOM"},
+		{ "trigger": "$FO_UTF16_BE_NOBOM = 2048 ; Write mode Unicode UTF16-BE with no BOM", "contents": "\\$FO_UTF16_BE_NOBOM"},
+		{ "trigger": "$FO_UTF8_FULL = 16384 ; Use full file UTF8 detection if no BOM present", "contents": "\\$FO_UTF8_FULL"},
+		{ "trigger": "$FO_FULLFILE_DETECT = 16384 ; Use full file UTF8 detection if no BOM present", "contents": "\\$FO_FULLFILE_DETECT"},
+
+		// Indicates file read options
+		{ "trigger": "$EOF = -1 ; End-of-file reached", "contents": "\\$EOF"},
+
+		// Indicates file open and save dialog options
+		{ "trigger": "$FD_FILEMUSTEXIST = 1 ; File must exist", "contents": "\\$FD_FILEMUSTEXIST"},
+		{ "trigger": "$FD_PATHMUSTEXIST = 2 ; Path must exist", "contents": "\\$FD_PATHMUSTEXIST"},
+		{ "trigger": "$FD_MULTISELECT = 4 ; Allow multi-select", "contents": "\\$FD_MULTISELECT"},
+		{ "trigger": "$FD_PROMPTCREATENEW = 8 ; Prompt to create new file", "contents": "\\$FD_PROMPTCREATENEW"},
+		{ "trigger": "$FD_PROMPTOVERWRITE = 16 ; Prompt to overWrite file", "contents": "\\$FD_PROMPTOVERWRITE"},
+
+		{ "trigger": "$CREATE_NEW = 1", "contents": "\\$CREATE_NEW"},
+		{ "trigger": "$CREATE_ALWAYS = 2", "contents": "\\$CREATE_ALWAYS"},
+		{ "trigger": "$OPEN_EXISTING = 3", "contents": "\\$OPEN_EXISTING"},
+		{ "trigger": "$OPEN_ALWAYS = 4", "contents": "\\$OPEN_ALWAYS"},
+		{ "trigger": "$TRUNCATE_EXISTING = 5", "contents": "\\$TRUNCATE_EXISTING"},
+
+		{ "trigger": "$INVALID_SET_FILE_POINTER = -1", "contents": "\\$INVALID_SET_FILE_POINTER"},
+
+		// Indicates starting point for the file pointer move operations
+		{ "trigger": "$FILE_BEGIN = 0", "contents": "\\$FILE_BEGIN"},
+		{ "trigger": "$FILE_CURRENT = 1", "contents": "\\$FILE_CURRENT"},
+		{ "trigger": "$FILE_END = 2", "contents": "\\$FILE_END"},
+
+		{ "trigger": "$FILE_ATTRIBUTE_READONLY = 0x00000001", "contents": "\\$FILE_ATTRIBUTE_READONLY"},
+		{ "trigger": "$FILE_ATTRIBUTE_HIDDEN = 0x00000002", "contents": "\\$FILE_ATTRIBUTE_HIDDEN"},
+		{ "trigger": "$FILE_ATTRIBUTE_SYSTEM = 0x00000004", "contents": "\\$FILE_ATTRIBUTE_SYSTEM"},
+		{ "trigger": "$FILE_ATTRIBUTE_DIRECTORY = 0x00000010", "contents": "\\$FILE_ATTRIBUTE_DIRECTORY"},
+		{ "trigger": "$FILE_ATTRIBUTE_ARCHIVE = 0x00000020", "contents": "\\$FILE_ATTRIBUTE_ARCHIVE"},
+		{ "trigger": "$FILE_ATTRIBUTE_DEVICE = 0x00000040", "contents": "\\$FILE_ATTRIBUTE_DEVICE"},
+		{ "trigger": "$FILE_ATTRIBUTE_NORMAL = 0x00000080", "contents": "\\$FILE_ATTRIBUTE_NORMAL"},
+		{ "trigger": "$FILE_ATTRIBUTE_TEMPORARY = 0x00000100", "contents": "\\$FILE_ATTRIBUTE_TEMPORARY"},
+		{ "trigger": "$FILE_ATTRIBUTE_SPARSE_FILE = 0x00000200", "contents": "\\$FILE_ATTRIBUTE_SPARSE_FILE"},
+		{ "trigger": "$FILE_ATTRIBUTE_REPARSE_POINT = 0x00000400", "contents": "\\$FILE_ATTRIBUTE_REPARSE_POINT"},
+		{ "trigger": "$FILE_ATTRIBUTE_COMPRESSED = 0x00000800", "contents": "\\$FILE_ATTRIBUTE_COMPRESSED"},
+		{ "trigger": "$FILE_ATTRIBUTE_OFFLINE = 0x00001000", "contents": "\\$FILE_ATTRIBUTE_OFFLINE"},
+		{ "trigger": "$FILE_ATTRIBUTE_NOT_CONTENT_INDEXED = 0x00002000", "contents": "\\$FILE_ATTRIBUTE_NOT_CONTENT_INDEXED"},
+		{ "trigger": "$FILE_ATTRIBUTE_ENCRYPTED = 0x00004000", "contents": "\\$FILE_ATTRIBUTE_ENCRYPTED"},
+
+		{ "trigger": "$FILE_SHARE_READ = 0x00000001", "contents": "\\$FILE_SHARE_READ"},
+		{ "trigger": "$FILE_SHARE_WRITE = 0x00000002", "contents": "\\$FILE_SHARE_WRITE"},
+		{ "trigger": "$FILE_SHARE_DELETE = 0x00000004", "contents": "\\$FILE_SHARE_DELETE"},
+		{ "trigger": "$FILE_SHARE_READWRITE = BitOR($FILE_SHARE_READ, $FILE_SHARE_WRITE)", "contents": "\\$FILE_SHARE_READWRITE"},
+		{ "trigger": "$FILE_SHARE_ANY = BitOR($FILE_SHARE_READ, $FILE_SHARE_WRITE, $FILE_SHARE_DELETE)", "contents": "\\$FILE_SHARE_ANY"},
+
+		{ "trigger": "$GENERIC_ALL = 0x10000000", "contents": "\\$GENERIC_ALL"},
+		{ "trigger": "$GENERIC_EXECUTE = 0x20000000", "contents": "\\$GENERIC_EXECUTE"},
+		{ "trigger": "$GENERIC_WRITE = 0x40000000", "contents": "\\$GENERIC_WRITE"},
+		{ "trigger": "$GENERIC_READ = 0x80000000", "contents": "\\$GENERIC_READ"},
+		{ "trigger": "$GENERIC_READWRITE = BitOR($GENERIC_READ, $GENERIC_WRITE)", "contents": "\\$GENERIC_READWRITE"},
+
+		// FileGetEncoding Constants
+		{ "trigger": "$FILE_ENCODING_UTF16LE = 32", "contents": "\\$FILE_ENCODING_UTF16LE"},
+
+		{ "trigger": "$FE_ENTIRE_UTF8 = 1", "contents": "\\$FE_ENTIRE_UTF8"},
+		{ "trigger": "$FE_PARTIALFIRST_UTF8 = 2", "contents": "\\$FE_PARTIALFIRST_UTF8"},
+
+		// FileGetLongName and FileGetShortName
+		{ "trigger": "$FN_FULLPATH = 0", "contents": "\\$FN_FULLPATH"},
+		{ "trigger": "$FN_RELATIVEPATH = 1", "contents": "\\$FN_RELATIVEPATH"},
+
+		// FileGetVersion Constants _WinAPI_VerQueryValue, _WinAPI_VerQueryValueEx
+		{ "trigger": "$FV_COMMENTS = 'Comments'", "contents": "\\$FV_COMMENTS"},
+		{ "trigger": "$FV_COMPANYNAME = 'CompanyName'", "contents": "\\$FV_COMPANYNAME"},
+		{ "trigger": "$FV_FILEDESCRIPTION = 'FileDescription'", "contents": "\\$FV_FILEDESCRIPTION"},
+		{ "trigger": "$FV_FILEVERSION = 'FileVersion'", "contents": "\\$FV_FILEVERSION"},
+		{ "trigger": "$FV_INTERNALNAME = 'InternalName'", "contents": "\\$FV_INTERNALNAME"},
+		{ "trigger": "$FV_LEGALCOPYRIGHT = 'LegalCopyright'", "contents": "\\$FV_LEGALCOPYRIGHT"},
+		{ "trigger": "$FV_LEGALTRADEMARKS = 'LegalTrademarks'", "contents": "\\$FV_LEGALTRADEMARKS"},
+		{ "trigger": "$FV_ORIGINALFILENAME = 'OriginalFilename'", "contents": "\\$FV_ORIGINALFILENAME"},
+		{ "trigger": "$FV_PRODUCTNAME = 'ProductName'", "contents": "\\$FV_PRODUCTNAME"},
+		{ "trigger": "$FV_PRODUCTVERSION = 'ProductVersion'", "contents": "\\$FV_PRODUCTVERSION"},
+		{ "trigger": "$FV_PRIVATEBUILD = 'PrivateBuild'", "contents": "\\$FV_PRIVATEBUILD"},
+		{ "trigger": "$FV_SPECIALBUILD = 'SpecialBuild'", "contents": "\\$FV_SPECIALBUILD"},
+
+		// Indicates _FileReadToArray modes
+		{ "trigger": "$FRTA_NOCOUNT = 0", "contents": "\\$FRTA_NOCOUNT"},
+		{ "trigger": "$FRTA_COUNT = 1", "contents": "\\$FRTA_COUNT"},
+		{ "trigger": "$FRTA_INTARRAYS = 2", "contents": "\\$FRTA_INTARRAYS"},
+		{ "trigger": "$FRTA_ENTIRESPLIT = 4", "contents": "\\$FRTA_ENTIRESPLIT"},
+
+		// Indicates _FileListToArray modes
+		{ "trigger": "$FLTA_FILESFOLDERS = 0", "contents": "\\$FLTA_FILESFOLDERS"},
+		{ "trigger": "$FLTA_FILES = 1", "contents": "\\$FLTA_FILES"},
+		{ "trigger": "$FLTA_FOLDERS = 2", "contents": "\\$FLTA_FOLDERS"},
+
+		// Indicates _FileListToArrayRec modes
+		{ "trigger": "$FLTAR_FILESFOLDERS = 0", "contents": "\\$FLTAR_FILESFOLDERS"},
+		{ "trigger": "$FLTAR_FILES = 1", "contents": "\\$FLTAR_FILES"},
+		{ "trigger": "$FLTAR_FOLDERS = 2", "contents": "\\$FLTAR_FOLDERS"},
+		{ "trigger": "$FLTAR_NOHIDDEN = 4", "contents": "\\$FLTAR_NOHIDDEN"},
+		{ "trigger": "$FLTAR_NOSYSTEM = 8", "contents": "\\$FLTAR_NOSYSTEM"},
+		{ "trigger": "$FLTAR_NOLINK = 16", "contents": "\\$FLTAR_NOLINK"},
+		{ "trigger": "$FLTAR_NORECUR = 0", "contents": "\\$FLTAR_NORECUR"},
+		{ "trigger": "$FLTAR_RECUR = 1", "contents": "\\$FLTAR_RECUR"},
+		{ "trigger": "$FLTAR_NOSORT = 0", "contents": "\\$FLTAR_NOSORT"},
+		{ "trigger": "$FLTAR_SORT = 1", "contents": "\\$FLTAR_SORT"},
+		{ "trigger": "$FLTAR_FASTSORT = 2", "contents": "\\$FLTAR_FASTSORT"},
+		{ "trigger": "$FLTAR_NOPATH = 0", "contents": "\\$FLTAR_NOPATH"},
+		{ "trigger": "$FLTAR_RELPATH = 1", "contents": "\\$FLTAR_RELPATH"},
+		{ "trigger": "$FLTAR_FULLPATH = 2", "contents": "\\$FLTAR_FULLPATH"}
+		// ===========================================================
+
+	]
+}

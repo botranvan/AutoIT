@@ -1,0 +1,341 @@
+{
+	"scope": "source.autoit",
+	"completions": [
+		// #INDEX# ===============================================================
+		// Title .........: Constants
+		// AutoIt Version : 3.3.14.2
+		// Language ......: English
+		// Description ...: Constants to be included in an AutoIt v3 script.
+		// Author(s) .....: JLandes, Nutster, CyberSlug, Holger, ...
+		// ===========================================================
+
+		// #CONSTANTS# ===========================================================
+		// Sets the way coords are used in the mouse and pixel functions
+		{"trigger": "$OPT_COORDSRELATIVE = 0 ; Relative coords to the active window", "contents": "\\$OPT_COORDSRELATIVE"},
+		{"trigger": "$OPT_COORDSABSOLUTE = 1 ; Absolute screen coordinates (default)", "contents": "\\$OPT_COORDSABSOLUTE"},
+		{"trigger": "$OPT_COORDSCLIENT = 2 ; Relative coords to client area", "contents": "\\$OPT_COORDSCLIENT"},
+
+		// Sets how errors are handled if a Run/RunWait function fails
+		{"trigger": "$OPT_ERRORSILENT = 0 ; Silent error (@error set to 1)", "contents": "\\$OPT_ERRORSILENT"},
+		{"trigger": "$OPT_ERRORFATAL = 1 ; Fatal error (default)", "contents": "\\$OPT_ERRORFATAL"},
+
+		// Alters the use of Caps Lock
+		{"trigger": "$OPT_CAPSNOSTORE = 0 ; Don't store/restore Caps Lock state", "contents": "\\$OPT_CAPSNOSTORE"},
+		{"trigger": "$OPT_CAPSSTORE = 1 ; Store/restore Caps Lock state (default)", "contents": "\\$OPT_CAPSSTORE"},
+
+		// Alters the method that is used to match window titles
+		{"trigger": "$OPT_MATCHSTART = 1 ; Match the title from the start (default)", "contents": "\\$OPT_MATCHSTART"},
+		{"trigger": "$OPT_MATCHANY = 2 ; Match any substring in the title", "contents": "\\$OPT_MATCHANY"},
+		{"trigger": "$OPT_MATCHEXACT = 3 ; Match the title exactly", "contents": "\\$OPT_MATCHEXACT"},
+		{"trigger": "$OPT_MATCHADVANCED = 4 ; Use advanced window matching (deprecated)", "contents": "\\$OPT_MATCHADVANCED"},
+
+		// Common Control Styles
+		{"trigger": "$CCS_TOP = 0x01", "contents": "\\$CCS_TOP"},
+		{"trigger": "$CCS_NOMOVEY = 0x02", "contents": "\\$CCS_NOMOVEY"},
+		{"trigger": "$CCS_BOTTOM = 0x03", "contents": "\\$CCS_BOTTOM"},
+		{"trigger": "$CCS_NORESIZE = 0x04", "contents": "\\$CCS_NORESIZE"},
+		{"trigger": "$CCS_NOPARENTALIGN = 0x08", "contents": "\\$CCS_NOPARENTALIGN"},
+		{"trigger": "$CCS_NOHILITE = 0x10", "contents": "\\$CCS_NOHILITE"},
+		{"trigger": "$CCS_ADJUSTABLE = 0x20", "contents": "\\$CCS_ADJUSTABLE"},
+		{"trigger": "$CCS_NODIVIDER = 0x40", "contents": "\\$CCS_NODIVIDER"},
+		{"trigger": "$CCS_VERT = 0x0080", "contents": "\\$CCS_VERT"},
+		{"trigger": "$CCS_LEFT = 0x0081", "contents": "\\$CCS_LEFT"},
+		{"trigger": "$CCS_NOMOVEX = 0x0082", "contents": "\\$CCS_NOMOVEX"},
+		{"trigger": "$CCS_RIGHT = 0x0083", "contents": "\\$CCS_RIGHT"},
+
+		// DriveGetType() Constants
+		{"trigger": "$DT_DRIVETYPE = 1 ; Drive type e.g. CD-ROM, Fixed.", "contents": "\\$DT_DRIVETYPE"},
+		{"trigger": "$DT_SSDSTATUS = 2 ; Status of whether the drive is SSD.", "contents": "\\$DT_SSDSTATUS"},
+		{"trigger": "$DT_BUSTYPE = 3 ; Bus type e.g. SATA, SD.", "contents": "\\$DT_BUSTYPE"},
+
+		// FtpSetProxy and HttpSetProxy Constants
+		{"trigger": "$PROXY_IE = 0", "contents": "\\$PROXY_IE"},
+		{"trigger": "$PROXY_NONE = 1", "contents": "\\$PROXY_NONE"},
+		{"trigger": "$PROXY_SPECIFIED = 2", "contents": "\\$PROXY_SPECIFIED"},
+
+		// Reserved IDs for System Objects
+		// in MenuConstants.au3
+		// in ScrollBarsConstants.au3
+		{"trigger": "$OBJID_WINDOW = 0x00000000", "contents": "\\$OBJID_WINDOW"},
+		{"trigger": "$OBJID_TITLEBAR = 0xFFFFFFFE", "contents": "\\$OBJID_TITLEBAR"},
+		{"trigger": "$OBJID_SIZEGRIP = 0xFFFFFFF9", "contents": "\\$OBJID_SIZEGRIP"},
+		{"trigger": "$OBJID_CARET = 0xFFFFFFF8", "contents": "\\$OBJID_CARET"},
+		{"trigger": "$OBJID_CURSOR = 0xFFFFFFF7", "contents": "\\$OBJID_CURSOR"},
+		{"trigger": "$OBJID_ALERT = 0xFFFFFFF6", "contents": "\\$OBJID_ALERT"},
+		{"trigger": "$OBJID_SOUND = 0xFFFFFFF5", "contents": "\\$OBJID_SOUND"},
+
+		// Progress and Splash Constants
+		// Indicates properties of the displayed progress or splash dialog
+		{"trigger": "$DLG_CENTERONTOP = 0 ; Center justified/always on top/with title", "contents": "\\$DLG_CENTERONTOP"},
+		{"trigger": "$DLG_NOTITLE = 1 ; Titleless window", "contents": "\\$DLG_NOTITLE"},
+		{"trigger": "$DLG_NOTONTOP = 2 ; Without 'always on top' attribute", "contents": "\\$DLG_NOTONTOP"},
+		{"trigger": "$DLG_TEXTLEFT = 4 ; Left justified text", "contents": "\\$DLG_TEXTLEFT"},
+		{"trigger": "$DLG_TEXTRIGHT = 8 ; Right justified text", "contents": "\\$DLG_TEXTRIGHT"},
+		{"trigger": "$DLG_MOVEABLE = 16 ; Window can be moved", "contents": "\\$DLG_MOVEABLE"},
+		{"trigger": "$DLG_TEXTVCENTER = 32 ; Splash text centered vertically", "contents": "\\$DLG_TEXTVCENTER"},
+
+		// Mouse Constants
+		// Indicates current mouse cursor
+		{"trigger": "$IDC_UNKNOWN = 0 ; Unknown cursor", "contents": "\\$IDC_UNKNOWN"},
+		{"trigger": "$IDC_APPSTARTING = 1 ; Standard arrow and small hourglass", "contents": "\\$IDC_APPSTARTING"},
+		{"trigger": "$IDC_ARROW = 2 ; Standard arrow", "contents": "\\$IDC_ARROW"},
+		{"trigger": "$IDC_CROSS = 3 ; Crosshair", "contents": "\\$IDC_CROSS"},
+		{"trigger": "$IDC_HAND = 32649 ; Hand cursor", "contents": "\\$IDC_HAND"},
+		{"trigger": "$IDC_HELP = 4 ; Arrow and question mark", "contents": "\\$IDC_HELP"},
+		{"trigger": "$IDC_IBEAM = 5 ; I-beam", "contents": "\\$IDC_IBEAM"},
+		{"trigger": "$IDC_ICON = 6 ; Obsolete", "contents": "\\$IDC_ICON"},
+		{"trigger": "$IDC_NO = 7 ; Slashed circle", "contents": "\\$IDC_NO"},
+		{"trigger": "$IDC_SIZE = 8 ; Obsolete", "contents": "\\$IDC_SIZE"},
+		{"trigger": "$IDC_SIZEALL = 9 ; Four-pointed arrow pointing N, S, E, and W", "contents": "\\$IDC_SIZEALL"},
+		{"trigger": "$IDC_SIZENESW = 10 ; Double-pointed arrow pointing NE and SW", "contents": "\\$IDC_SIZENESW"},
+		{"trigger": "$IDC_SIZENS = 11 ; Double-pointed arrow pointing N and S", "contents": "\\$IDC_SIZENS"},
+		{"trigger": "$IDC_SIZENWSE = 12 ; Double-pointed arrow pointing NW and SE", "contents": "\\$IDC_SIZENWSE"},
+		{"trigger": "$IDC_SIZEWE = 13 ; Double-pointed arrow pointing W and E", "contents": "\\$IDC_SIZEWE"},
+		{"trigger": "$IDC_UPARROW = 14 ; Vertical arrow", "contents": "\\$IDC_UPARROW"},
+		{"trigger": "$IDC_WAIT = 15 ; Hourglass", "contents": "\\$IDC_WAIT"},
+
+		{"trigger": "$IDI_APPLICATION = 32512 ; Application icon", "contents": "\\$IDI_APPLICATION"},
+		{"trigger": "$IDI_ASTERISK = 32516 ; Asterisk icon", "contents": "\\$IDI_ASTERISK"},
+		{"trigger": "$IDI_EXCLAMATION = 32515 ; Exclamation point icon", "contents": "\\$IDI_EXCLAMATION"},
+		{"trigger": "$IDI_HAND = 32513 ; Stop sign icon", "contents": "\\$IDI_HAND"},
+		{"trigger": "$IDI_QUESTION = 32514 ; Question-mark icon", "contents": "\\$IDI_QUESTION"},
+		{"trigger": "$IDI_WINLOGO = 32517 ; Windows logo icon. Windows XP: Application icon", "contents": "\\$IDI_WINLOGO"},
+		{"trigger": "$IDI_SHIELD = 32518", "contents": "\\$IDI_SHIELD"},
+		{"trigger": "$IDI_ERROR = $IDI_HAND", "contents": "\\$IDI_ERROR"},
+		{"trigger": "$IDI_INFORMATION = $IDI_ASTERISK", "contents": "\\$IDI_INFORMATION"},
+		{"trigger": "$IDI_WARNING = $IDI_EXCLAMATION", "contents": "\\$IDI_WARNING"},
+
+		// Process Constants
+		// Indicates the type of shutdown
+		{"trigger": "$SD_LOGOFF = 0 ; Logoff", "contents": "\\$SD_LOGOFF"},
+		{"trigger": "$SD_SHUTDOWN = 1 ; Shutdown", "contents": "\\$SD_SHUTDOWN"},
+		{"trigger": "$SD_REBOOT = 2 ; Reboot", "contents": "\\$SD_REBOOT"},
+		{"trigger": "$SD_FORCE = 4 ; Force", "contents": "\\$SD_FORCE"},
+		{"trigger": "$SD_POWERDOWN = 8 ; Power down", "contents": "\\$SD_POWERDOWN"},
+		{"trigger": "$SD_FORCEHUNG = 16 ; Force shutdown if hung", "contents": "\\$SD_FORCEHUNG"},
+		{"trigger": "$SD_STANDBY = 32 ; Standby", "contents": "\\$SD_STANDBY"},
+		{"trigger": "$SD_HIBERNATE = 64 ; Hibernate", "contents": "\\$SD_HIBERNATE"},
+
+		// Run Constants
+		{"trigger": "$STDIN_CHILD = 1", "contents": "\\$STDIN_CHILD"},
+		{"trigger": "$STDOUT_CHILD = 2", "contents": "\\$STDOUT_CHILD"},
+		{"trigger": "$STDERR_CHILD = 4", "contents": "\\$STDERR_CHILD"},
+		{"trigger": "$STDERR_MERGED = 8", "contents": "\\$STDERR_MERGED"},
+		{"trigger": "$STDIO_INHERIT_PARENT = 0x10", "contents": "\\$STDIO_INHERIT_PARENT"},
+		{"trigger": "$RUN_CREATE_NEW_CONSOLE = 0x00010000", "contents": "\\$RUN_CREATE_NEW_CONSOLE"},
+
+		// UBound Constants
+		{"trigger": "$UBOUND_DIMENSIONS = 0", "contents": "\\$UBOUND_DIMENSIONS"},
+		{"trigger": "$UBOUND_ROWS = 1", "contents": "\\$UBOUND_ROWS"},
+		{"trigger": "$UBOUND_COLUMNS = 2", "contents": "\\$UBOUND_COLUMNS"},
+
+		// Mouse Event Constants
+		{"trigger": "$MOUSEEVENTF_ABSOLUTE = 0x8000 ; Specifies that the dx and dy parameters contain normalized absolute coordinates", "contents": "\\$MOUSEEVENTF_ABSOLUTE"},
+		{"trigger": "$MOUSEEVENTF_MOVE = 0x0001 ; Specifies that movement occurred", "contents": "\\$MOUSEEVENTF_MOVE"},
+		{"trigger": "$MOUSEEVENTF_LEFTDOWN = 0x0002 ; Specifies that the left button changed to down", "contents": "\\$MOUSEEVENTF_LEFTDOWN"},
+		{"trigger": "$MOUSEEVENTF_LEFTUP = 0x0004 ; Specifies that the left button changed to up", "contents": "\\$MOUSEEVENTF_LEFTUP"},
+		{"trigger": "$MOUSEEVENTF_RIGHTDOWN = 0x0008 ; Specifies that the right button changed to down", "contents": "\\$MOUSEEVENTF_RIGHTDOWN"},
+		{"trigger": "$MOUSEEVENTF_RIGHTUP = 0x0010 ; Specifies that the right button changed to up", "contents": "\\$MOUSEEVENTF_RIGHTUP"},
+		{"trigger": "$MOUSEEVENTF_MIDDLEDOWN = 0x0020 ; Specifies that the middle button changed to down", "contents": "\\$MOUSEEVENTF_MIDDLEDOWN"},
+		{"trigger": "$MOUSEEVENTF_MIDDLEUP = 0x0040 ; Specifies that the middle button changed to up", "contents": "\\$MOUSEEVENTF_MIDDLEUP"},
+		{"trigger": "$MOUSEEVENTF_WHEEL = 0x0800 ; Specifies that the wheel has been moved, if the mouse has a wheel", "contents": "\\$MOUSEEVENTF_WHEEL"},
+		{"trigger": "$MOUSEEVENTF_XDOWN = 0x0080 ; Specifies that an X button was pressed", "contents": "\\$MOUSEEVENTF_XDOWN"},
+		{"trigger": "$MOUSEEVENTF_XUP = 0x0100 ; Specifies that an X button was released", "contents": "\\$MOUSEEVENTF_XUP"},
+
+		// Reg Value type Constants
+		{"trigger": "$REG_NONE = 0", "contents": "\\$REG_NONE"},
+		{"trigger": "$REG_SZ = 1", "contents": "\\$REG_SZ"},
+		{"trigger": "$REG_EXPAND_SZ = 2", "contents": "\\$REG_EXPAND_SZ"},
+		{"trigger": "$REG_BINARY = 3", "contents": "\\$REG_BINARY"},
+		{"trigger": "$REG_DWORD = 4", "contents": "\\$REG_DWORD"},
+		{"trigger": "$REG_DWORD_LITTLE_ENDIAN = 4", "contents": "\\$REG_DWORD_LITTLE_ENDIAN"},
+		{"trigger": "$REG_DWORD_BIG_ENDIAN = 5", "contents": "\\$REG_DWORD_BIG_ENDIAN"},
+		{"trigger": "$REG_LINK = 6", "contents": "\\$REG_LINK"},
+		{"trigger": "$REG_MULTI_SZ = 7", "contents": "\\$REG_MULTI_SZ"},
+		{"trigger": "$REG_RESOURCE_LIST = 8", "contents": "\\$REG_RESOURCE_LIST"},
+		{"trigger": "$REG_FULL_RESOURCE_DESCRIPTOR = 9", "contents": "\\$REG_FULL_RESOURCE_DESCRIPTOR"},
+		{"trigger": "$REG_RESOURCE_REQUIREMENTS_LIST = 10", "contents": "\\$REG_RESOURCE_REQUIREMENTS_LIST"},
+		{"trigger": "$REG_QWORD = 11", "contents": "\\$REG_QWORD"},
+		{"trigger": "$REG_QWORD_LITTLE_ENDIAN = 11", "contents": "\\$REG_QWORD_LITTLE_ENDIAN"},
+
+		// Z order
+		{"trigger": "$HWND_BOTTOM = 1 ; Places the window at the bottom of the Z order", "contents": "\\$HWND_BOTTOM"},
+		{"trigger": "$HWND_NOTOPMOST = -2 ; Places the window above all non-topmost windows", "contents": "\\$HWND_NOTOPMOST"},
+		{"trigger": "$HWND_TOP = 0 ; Places the window at the top of the Z order", "contents": "\\$HWND_TOP"},
+		{"trigger": "$HWND_TOPMOST = -1 ; Places the window above all non-topmost windows", "contents": "\\$HWND_TOPMOST"},
+
+		// SetWindowPos Constants
+		{"trigger": "$SWP_NOSIZE = 0x0001", "contents": "\\$SWP_NOSIZE"},
+		{"trigger": "$SWP_NOMOVE = 0x0002", "contents": "\\$SWP_NOMOVE"},
+		{"trigger": "$SWP_NOZORDER = 0x0004", "contents": "\\$SWP_NOZORDER"},
+		{"trigger": "$SWP_NOREDRAW = 0x0008", "contents": "\\$SWP_NOREDRAW"},
+		{"trigger": "$SWP_NOACTIVATE = 0x0010", "contents": "\\$SWP_NOACTIVATE"},
+		{"trigger": "$SWP_FRAMECHANGED = 0x0020", "contents": "\\$SWP_FRAMECHANGED"},
+		{"trigger": "$SWP_DRAWFRAME = 0x0020", "contents": "\\$SWP_DRAWFRAME"},
+		{"trigger": "$SWP_SHOWWINDOW = 0x0040", "contents": "\\$SWP_SHOWWINDOW"},
+		{"trigger": "$SWP_HIDEWINDOW = 0x0080", "contents": "\\$SWP_HIDEWINDOW"},
+		{"trigger": "$SWP_NOCOPYBITS = 0x0100", "contents": "\\$SWP_NOCOPYBITS"},
+		{"trigger": "$SWP_NOOWNERZORDER = 0x0200", "contents": "\\$SWP_NOOWNERZORDER"},
+		{"trigger": "$SWP_NOREPOSITION = 0x0200", "contents": "\\$SWP_NOREPOSITION"},
+		{"trigger": "$SWP_NOSENDCHANGING = 0x0400", "contents": "\\$SWP_NOSENDCHANGING"},
+		{"trigger": "$SWP_DEFERERASE = 0x2000", "contents": "\\$SWP_DEFERERASE"},
+		{"trigger": "$SWP_ASYNCWINDOWPOS = 0x4000", "contents": "\\$SWP_ASYNCWINDOWPOS"},
+
+		// Keywords (returned from the IsKeyword() function)
+		{"trigger": "$KEYWORD_DEFAULT = 1", "contents": "\\$KEYWORD_DEFAULT"},
+		{"trigger": "$KEYWORD_NULL = 2", "contents": "\\$KEYWORD_NULL"},
+
+		// IsDeclared Constants
+		{"trigger": "$DECLARED_LOCAL = -1", "contents": "\\$DECLARED_LOCAL"},
+		{"trigger": "$DECLARED_UNKNOWN = 0", "contents": "\\$DECLARED_UNKNOWN"},
+		{"trigger": "$DECLARED_GLOBAL = 1", "contents": "\\$DECLARED_GLOBAL"},
+
+		// Assign Constants
+		{"trigger": "$ASSIGN_CREATE = 0", "contents": "\\$ASSIGN_CREATE"},
+		{"trigger": "$ASSIGN_FORCELOCAL = 1", "contents": "\\$ASSIGN_FORCELOCAL"},
+		{"trigger": "$ASSIGN_FORCEGLOBAL = 2", "contents": "\\$ASSIGN_FORCEGLOBAL"},
+		{"trigger": "$ASSIGN_EXISTFAIL = 4", "contents": "\\$ASSIGN_EXISTFAIL"},
+
+		// BlockInput Constants
+		{"trigger": "$BI_ENABLE = 0", "contents": "\\$BI_ENABLE"},
+		{"trigger": "$BI_DISABLE = 1", "contents": "\\$BI_DISABLE"},
+
+		// Break Constants
+		{"trigger": "$BREAK_ENABLE = 1", "contents": "\\$BREAK_ENABLE"},
+		{"trigger": "$BREAK_DISABLE = 0", "contents": "\\$BREAK_DISABLE"},
+
+		// CDTray Constants
+		{"trigger": "$CDTRAY_OPEN = 'open'", "contents": "\\$CDTRAY_OPEN"},
+		{"trigger": "$CDTRAY_CLOSED = 'closed'", "contents": "\\$CDTRAY_CLOSED"},
+
+		// ControlSend and Send Constants
+		{"trigger": "$SEND_DEFAULT = 0", "contents": "\\$SEND_DEFAULT"},
+		{"trigger": "$SEND_RAW = 1", "contents": "\\$SEND_RAW"},
+
+		// DirGetSize Constants
+		{"trigger": "$DIR_DEFAULT = 0", "contents": "\\$DIR_DEFAULT"},
+		{"trigger": "$DIR_EXTENDED= 1", "contents": "\\$DIR_EXTENDED"},
+		{"trigger": "$DIR_NORECURSE = 2", "contents": "\\$DIR_NORECURSE"},
+
+		// DirRemove Constants
+		{"trigger": "Global Const $DIR_DEFAULT = 0", "contents": "\\$DIR_DEFAULT"},
+		{"trigger": "$DIR_REMOVE= 1", "contents": "\\$DIR_REMOVE"},
+
+		// DriveGetDrive Constants
+		{"trigger": "$DT_ALL = 'ALL'", "contents": "\\$DT_ALL"},
+		{"trigger": "$DT_CDROM = 'CDROM'", "contents": "\\$DT_CDROM"},
+		{"trigger": "$DT_REMOVABLE = 'REMOVABLE'", "contents": "\\$DT_REMOVABLE"},
+		{"trigger": "$DT_FIXED = 'FIXED'", "contents": "\\$DT_FIXED"},
+		{"trigger": "$DT_NETWORK = 'NETWORK'", "contents": "\\$DT_NETWORK"},
+		{"trigger": "$DT_RAMDISK = 'RAMDISK'", "contents": "\\$DT_RAMDISK"},
+		{"trigger": "$DT_UNKNOWN = 'UNKNOWN'", "contents": "\\$DT_UNKNOWN"},
+
+		// DriveGetFileSystem Constants
+		{"trigger": "$DT_UNDEFINED = 1", "contents": "\\$DT_UNDEFINED"},
+		{"trigger": "$DT_FAT = 'FAT'", "contents": "\\$DT_FAT"},
+		{"trigger": "$DT_FAT32 = 'FAT32'", "contents": "\\$DT_FAT32"},
+		{"trigger": "$DT_EXFAT = 'exFAT'", "contents": "\\$DT_EXFAT"},
+		{"trigger": "$DT_NTFS = 'NTFS'", "contents": "\\$DT_NTFS"},
+		{"trigger": "$DT_NWFS = 'NWFS'", "contents": "\\$DT_NWFS"},
+		{"trigger": "$DT_CDFS = 'CDFS'", "contents": "\\$DT_CDFS"},
+		{"trigger": "$DT_UDF = 'UDF'", "contents": "\\$DT_UDF"},
+
+		// DriveMapAdd Constants
+		{"trigger": "$DMA_DEFAULT = 0", "contents": "\\$DMA_DEFAULT"},
+		{"trigger": "$DMA_PERSISTENT = 1", "contents": "\\$DMA_PERSISTENT"},
+		{"trigger": "$DMA_AUTHENTICATION = 8", "contents": "\\$DMA_AUTHENTICATION"},
+
+		// DriveStatus Constants
+		{"trigger": "$DS_UNKNOWN = 'UNKNOWN'", "contents": "\\$DS_UNKNOWN"},
+		{"trigger": "$DS_READY = 'READY'", "contents": "\\$DS_READY"},
+		{"trigger": "$DS_NOTREADY = 'NOTREADY'", "contents": "\\$DS_NOTREADY"},
+		{"trigger": "$DS_INVALID = 'INVALID'", "contents": "\\$DS_INVALID"},
+
+		// Mouse related Constants
+		{"trigger": "$MOUSE_CLICK_LEFT = 'left'", "contents": "\\$MOUSE_CLICK_LEFT"},
+		{"trigger": "$MOUSE_CLICK_RIGHT = 'right'", "contents": "\\$MOUSE_CLICK_RIGHT"},
+		{"trigger": "$MOUSE_CLICK_MIDDLE = 'middle'", "contents": "\\$MOUSE_CLICK_MIDDLE"},
+		{"trigger": "$MOUSE_CLICK_MAIN = 'main'", "contents": "\\$MOUSE_CLICK_MAIN"},
+		{"trigger": "$MOUSE_CLICK_MENU = 'menu'", "contents": "\\$MOUSE_CLICK_MENU"},
+		{"trigger": "$MOUSE_CLICK_PRIMARY = 'primary'", "contents": "\\$MOUSE_CLICK_PRIMARY"},
+		{"trigger": "$MOUSE_CLICK_SECONDARY = 'secondary'", "contents": "\\$MOUSE_CLICK_SECONDARY"},
+		{"trigger": "$MOUSE_WHEEL_UP = 'up'", "contents": "\\$MOUSE_WHEEL_UP"},
+		{"trigger": "$MOUSE_WHEEL_DOWN = 'down'", "contents": "\\$MOUSE_WHEEL_DOWN"},
+
+		// Dec, Int, Number Constants
+		{"trigger": "$NUMBER_AUTO = 0", "contents": "\\$NUMBER_AUTO"},
+		{"trigger": "$NUMBER_32BIT = 1", "contents": "\\$NUMBER_32BIT"},
+		{"trigger": "$NUMBER_64BIT = 2", "contents": "\\$NUMBER_64BIT"},
+		{"trigger": "$NUMBER_DOUBLE = 3", "contents": "\\$NUMBER_DOUBLE"},
+
+		// ObjName Constants
+		{"trigger": "$OBJ_NAME = 1", "contents": "\\$OBJ_NAME"},
+		{"trigger": "$OBJ_STRING = 2", "contents": "\\$OBJ_STRING"},
+		{"trigger": "$OBJ_PROGID = 3", "contents": "\\$OBJ_PROGID"},
+		{"trigger": "$OBJ_FILE = 4", "contents": "\\$OBJ_FILE"},
+		{"trigger": "$OBJ_MODULE = 5", "contents": "\\$OBJ_MODULE"},
+		{"trigger": "$OBJ_CLSID = 6", "contents": "\\$OBJ_CLSID"},
+		{"trigger": "$OBJ_IID = 7", "contents": "\\$OBJ_IID"},
+
+		// OnAutoItExitRegister Constants
+		{"trigger": "$EXITCLOSE_NORMAL = 0 ; Natural closing.", "contents": "\\$EXITCLOSE_NORMAL"},
+		{"trigger": "$EXITCLOSE_BYEXIT = 1 ; close by Exit function.", "contents": "\\$EXITCLOSE_BYEXIT"},
+		{"trigger": "$EXITCLOSE_BYCLICK = 2 ; close by clicking on exit of the systray.", "contents": "\\$EXITCLOSE_BYCLICK"},
+		{"trigger": "$EXITCLOSE_BYLOGOFF = 3 ; close by user logoff.", "contents": "\\$EXITCLOSE_BYLOGOFF"},
+		{"trigger": "$EXITCLOSE_BYSUTDOWN = 4 ; close by Windows shutdown.", "contents": "\\$EXITCLOSE_BYSUTDOWN"},
+
+		// ProcessGetStats Constants
+		{"trigger": "$PROCESS_STATS_MEMORY = 0", "contents": "\\$PROCESS_STATS_MEMORY"},
+		{"trigger": "$PROCESS_STATS_IO = 1", "contents": "\\$PROCESS_STATS_IO"},
+
+		// ProcessSetPriority Constants
+		{"trigger": "$PROCESS_LOW = 0", "contents": "\\$PROCESS_LOW"},
+		{"trigger": "$PROCESS_BELOWNORMAL = 1", "contents": "\\$PROCESS_BELOWNORMAL"},
+		{"trigger": "$PROCESS_NORMAL = 2", "contents": "\\$PROCESS_NORMAL"},
+		{"trigger": "$PROCESS_ABOVENORMAL = 3", "contents": "\\$PROCESS_ABOVENORMAL"},
+		{"trigger": "$PROCESS_HIGH = 4", "contents": "\\$PROCESS_HIGH"},
+		{"trigger": "$PROCESS_REALTIME = 5", "contents": "\\$PROCESS_REALTIME"},
+
+		// RunAs and RunAsWait Constants
+		{"trigger": "$RUN_LOGON_NOPROFILE = 0", "contents": "\\$RUN_LOGON_NOPROFILE"},
+		{"trigger": "$RUN_LOGON_PROFILE = 1", "contents": "\\$RUN_LOGON_PROFILE"},
+		{"trigger": "$RUN_LOGON_NETWORK = 2", "contents": "\\$RUN_LOGON_NETWORK"},
+		{"trigger": "$RUN_LOGON_INHERIT = 4", "contents": "\\$RUN_LOGON_INHERIT"},
+
+		// SoundPlay Constants
+		{"trigger": "$SOUND_NOWAIT = 0 ; continue script while sound is playing (default)", "contents": "\\$SOUND_NOWAIT"},
+		{"trigger": "$SOUND_WAIT = 1 ; wait until sound has finished", "contents": "\\$SOUND_WAIT"},
+
+		// ShellExecute and ShellExecuteWait Constants
+		{"trigger": "$SHEX_OPEN = 'open'", "contents": "\\$SHEX_OPEN"},
+		{"trigger": "$SHEX_EDIT = 'edit'", "contents": "\\$SHEX_EDIT"},
+		{"trigger": "$SHEX_PRINT = 'print'", "contents": "\\$SHEX_PRINT"},
+		{"trigger": "$SHEX_PROPERTIES = 'properties'", "contents": "\\$SHEX_PROPERTIES"},
+
+		// TCPRecv Constants
+		{"trigger": "$TCP_DATA_DEFAULT = 0", "contents": "\\$TCP_DATA_DEFAULT"},
+		{"trigger": "$TCP_DATA_BINARY = 1", "contents": "\\$TCP_DATA_BINARY"},
+
+		// UDPOpen, UDPRecv Constants
+		{"trigger": "$UDP_OPEN_DEFAULT = 0", "contents": "\\$UDP_OPEN_DEFAULT"},
+		{"trigger": "$UDP_OPEN_BROADCAST = 1", "contents": "\\$UDP_OPEN_BROADCAST"},
+		{"trigger": "$UDP_DATA_DEFAULT = 0", "contents": "\\$UDP_DATA_DEFAULT"},
+		{"trigger": "$UDP_DATA_BINARY = 1", "contents": "\\$UDP_DATA_BINARY"},
+		{"trigger": "$UDP_DATA_ARRAY = 2", "contents": "\\$UDP_DATA_ARRAY"},
+
+		// ToolTip, GUICtrlSetTip Constants
+		{"trigger": "$TIP_NOICON = 0 ; No icon", "contents": "\\$TIP_NOICON"},
+		{"trigger": "$TIP_INFOICON = 1 ; Info icon", "contents": "\\$TIP_INFOICON"},
+		{"trigger": "$TIP_WARNINGICON = 2 ; Warning icon", "contents": "\\$TIP_WARNINGICON"},
+		{"trigger": "$TIP_ERRORICON = 3 ; Error Icon", "contents": "\\$TIP_ERRORICON"},
+
+		{"trigger": "$TIP_BALLOON = 1", "contents": "\\$TIP_BALLOON"},
+		{"trigger": "$TIP_CENTER = 2", "contents": "\\$TIP_CENTER"},
+		{"trigger": "$TIP_FORCEVISIBLE = 4", "contents": "\\$TIP_FORCEVISIBLE"},
+
+		// WindowsSetOnTop Constants
+		{"trigger": "$WINDOWS_NOONTOP = 0", "contents": "\\$WINDOWS_NOONTOP"},
+		{"trigger": "$WINDOWS_ONTOP = 1", "contents": "\\$WINDOWS_ONTOP"}
+		// ===========================================================
+	]
+}

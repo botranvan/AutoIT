@@ -413,11 +413,11 @@ EndFunc
 Func FPointerWrite($iv_Address,$NewValue,$sv_Type = 'dword')
 	$iv_Address = StringSplit($iv_Address,'|')
 
-	$Cur = FCTRead($iv_Address[1])		;Dec
+	$Cur = FCTRead($iv_Address[1])
 
 	For $i = 2 To $iv_Address[0]-1 Step 1
 		$Cur = FCTRead($Cur+$iv_Address[$i])
-	Next			;	Dec		Hex	(Dec)
+	Next
 
 	Return FCTWrite($Cur+$iv_Address[$i],$NewValue,$sv_Type)
 EndFunc

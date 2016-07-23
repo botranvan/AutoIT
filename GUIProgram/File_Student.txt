@@ -1,0 +1,10 @@
+Trần Văn Bộ| 1996-09-08| Nam| AT11C| Nam Định
+Bùi Túc Chi| 1996-01-27| Nữ| AT11A| Nam Định
+Trần Thu Phương| 1996-09-30| Nữ| AT11D| Hải Dương
+Bùi Nhật Anh| 1996-05-06| Nam| AT11B| Hải Phòng
+Đỗ Minh Khang| 1996-06-09| Nam| AT11D| Bắc Giang
+Trần Thùy Linh| 1996-12-14| Nữ| AT11A| Đà Nẵng
+Nguyễn Đức Chung| 1996-06-23| Nam| AT11B| Cao Bằng
+Nguyễn Tuấn Anh| 1996-10-20| Nam| AT11A| Thái Bình
+Tiêu Công Hậu| 1995-12-13| Nam| AT11C| Hải Dương
+Trần Bảo Long| 1996-12-24| Nam| AT11A| Thái Nguyên

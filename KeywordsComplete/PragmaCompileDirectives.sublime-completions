@@ -1,0 +1,25 @@
+{
+"scope": "source.autoit",
+"completions": [
+	{"trigger": "#pragma-compile-Out", "contents": "#pragma compile(Out, ${1:FileName})\n"},
+	{"trigger": "#pragma-complie-AutoItExecuteAllowed", "contents": "#pragma compile(AutoItExecuteAllowed,${1: true}${2: false})\n"},
+	{"trigger": "#pragma-complie-Comments", "contents": "#pragma compile(Comments, ${1:Comment remarks with quotes or without})\n"},
+	{"trigger": "#pragma-complie-CompanyName", "contents": "#pragma compile(CompanyName, ${1:Company name remark with quotes or without})\n"},
+	{"trigger": "#pragma-complie-Compatibility", "contents": "#pragma compile(Compatibility,${1: vista}${2: win7}${3: win8}${4: win81}${5: win10})\n"},
+	{"trigger": "#pragma-complie-Compression", "contents": "#pragma compile(Compression,${1: 1}${2: 3}${3: 5}${4: 7}${5: 9})\n"},
+	{"trigger": "#pragma-complie-Console", "contents": "#pragma compile(Console,${1: true}${2: false})\n"},
+	{"trigger": "#pragma-complie-ExecLevel", "contents": "#pragma compile(ExecLevel,${1: none}${2: asInvoker}${3: highestAvailable}${4: requireAdministrator})\n"},
+	{"trigger": "#pragma-complie-FileDescription", "contents": "#pragma compile(FileDescription, ${1:File description with quotes or without})\n"},
+	{"trigger": "#pragma-complie-FileVersion", "contents": "#pragma compile(FileVersion, ${1:File version with the last parameter being optional})\n"},
+	{"trigger": "#pragma-complie-Icon", "contents": "#pragma compile(Icon, ${1:FileName Path})\n"},
+	{"trigger": "#pragma-complie-inputboxres", "contents": "#pragma compile(inputboxres, ${1: true}${2: false})\n"},
+	{"trigger": "#pragma-complie-InternalName", "contents": "#pragma compile(InternalName, ${1:Internal name with or without quotes})\n"},
+	{"trigger": "#pragma-complie-LegalCopyright", "contents": "#pragma compile(LegalCopyright, ${1:Legal copyright remark with or without quotes})\n"},
+	{"trigger": "#pragma-complie-LegalTrademarks", "contents": "#pragma compile(LegalTrademarks, ${1:Legal copyright remark with or without quotes})\n"},
+	{"trigger": "#pragma-complie-OriginalFilename", "contents": "#pragma compile(OriginalFilename, ${1:FileName})\n"},
+	{"trigger": "#pragma-complie-ProductName", "contents": "#pragma compile(ProductName, ${1:Product name remark with or without quotes})\n"},
+	{"trigger": "#pragma-complie-ProductVersion", "contents": "#pragma compile(ProductVersion, ${1:File version with the last parameter being optional})\n"},
+	{"trigger": "#pragma-complie-UPX", "contents": "#pragma compile(UPX,${1: true}${2: false})\n"},
+	{"trigger": "#pragma-complie-x64", "contents": "#pragma compile(x64, ${1: true}${2: false})\n"}
+]
+}

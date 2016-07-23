@@ -1,6 +1,0 @@
-﻿1 - Copy đường dẫn chứa các ảnh cần up và giao diện => Bấm Get Images
-2 - Mở trang upload ảnh của Flixya lên, đưa chuột vào nút chọn file (Browse)
-3 - Xong bấm phím Insert để tool ghi nhớ vị trí chuột và bắt đầu upload.
-
-== FYImage v1.0 =================================================
-Tự chọn file ảnh trong 1 thư mục được trình duyệt ghi nhớ

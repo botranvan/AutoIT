@@ -1,0 +1,37 @@
+body{
+	background-color: grey;
+	cursor: default;
+}
+.page{
+	width: 1000px;
+	background-color: white;
+	font-family: "Times New Roman" Tahoma Arial;
+	border: 1px solid;
+	padding: 5px 15px 5px 15px;
+	margin: auto;
+}
+th{
+	color: blue;
+	min-width: 150px;
+}
+td.menustyle{
+	width: 100px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: bold;
+}
+td.userstyle{
+	padding: 3px;
+	border-right: 1px solid grey;
+	min-width: 150px;
+}
+a:link{
+	color: blue;
+	text-decoration: none;
+}
+a:visited{
+	color: blue;
+}
+a:hover{
+	color: red;
+}
