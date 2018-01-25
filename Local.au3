@@ -9,3 +9,17 @@ Func _Terminates()
 EndFunc   ;==>_Terminates
 
 
+HotKeySet("a", "_SendKey")
+Func _SendKey()
+	While True
+		Send("f")
+	WEnd
+EndFunc
+
+Func Wait()
+	While True
+		Sleep(100)
+	WEnd
+EndFunc
+
+Wait()
